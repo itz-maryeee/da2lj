@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,600;1,800&display=swap');
+
+
+*, ::after, ::before{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    box-sizing: content-box;
+}
+#img-logo{
+    width:55px;
+}
+.navbar{
+    border: 2px solid red;
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.1s;
+    height: 2px;
+    width: 100%;
+    background-color: #ffb900;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.nav-link:hover::after {
+    opacity: 1;
+}
+.navbar-nav .nav-item a{
+    font-size: 0.8em; 
+    text-transform: uppercase; 
+    font-weight: 500;
+}
+.nav-item a.btn {
+    background-color: transparent;
+    border:0.1em solid #d2705c;
+    color:#d2705c;
+    text-align:center;
+    padding:.7em 1.6em;
+    margin:0 0.2em 0.5em 0;
+    text-decoration:none;
+    display:inline-block;
+    border-radius:1.4em;
+    box-sizing: border-box;
+    font-weight:800;
+    transition: all 0.03s;
+    }
+.nav-item a.btn:hover{
+    background-color: #d2705c;
+    color:#fff;
+}
+
+@media all and (max-width:30em){
+    .nav-item a.btn{
+    display:block;
+    margin:0.2em auto;
+    }
+}
+#slider-hero-item{
+    min-height: 35rem;
+    background-color: darkgray;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#slider-hero-item .carousel-caption{
+    position: absolute;
+}
+
+/* carousel buttons */
+#btncontact{
+    background-color: #d2705c;
+    border: 1px solid #d2705c;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
+    text-align: center;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top:20px;
+    font-size: 14px;
+    border-radius: 25px;
+}
+/* banner container */
+#banner{
+    background-image: url(../assets/homepage.png);
+    max-height: 25em;
+    background-color: rgba(0,0, 0,.2);
+    background-size: cover;
+    background-position: center right;
+}
+.text-gray{
+    font-size: 1rem;
+}
+
+/* testimonial container */
+.testimonial{
+    height:40rem;
+}
+#tstmny-inner{
+    width:50%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10rem;
+    display: block;
+}
+
+.navbar-toggler{
+    background-color: #ffffff;
+}
+
+/* footer button */
+#btncontact1{
+    background-color:#ffb900;
+    border: 1px solid #ffb900;
+    color: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+#footer-txt{
+    font-size: 3em;
+    line-height: 1;
+}
+/* copyrights */
+#copy{
+    font-size: 11px;
+}
+
+
+
+/**
+<section class="p-0">
+                <div class="row d-flex align-items-center">
+                  <!-- Grid column -->
+                  <div class="col-md-7 col-lg-8 text-center text-md-start">
+                    <!-- Copyright -->
+                    <div class="p-3">
+                      Discipling Another To Love Jesus </br>
+                      © 2020 Copyright: All Rights Reserved
+                    </div>
+                    <!-- Copyright -->
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                    <!-- Facebook -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                      ></a>
+
+                    <!-- Twitter -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-twitter"></i
+                      ></a>
+
+                    <!-- Google -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-google"></i
+                      ></a>
+
+                    <!-- Instagram -->
+                    <a
+                      class="btn btn-outline-light btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                      ></a>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+              </section>
+              <!-- Section: Copyright -->
+
+
+
+#txt{
+    line-height:10vh;
+    word-spacing:5px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+
+
+.nav-item .btn{
+    width:120px;
+    border-radius: 45px;
+    background-color:#004569;
+}
+
+d-none d-md-inline**/
+
