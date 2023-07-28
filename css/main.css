@@ -11,9 +11,9 @@ body{
 #img-logo{
     width:55px;
 }
-.navbar{
+/* .navbar{
     border: 2px solid red;
-}
+} */
 .nav-link {
     position: relative;
 }
@@ -62,7 +62,7 @@ body{
     }
 }
 #slider-hero-item{
-    min-height: 35rem;
+    min-height: 100%;
     background-color: darkgray;
     position: relative;
     background-position: center;
@@ -86,36 +86,65 @@ body{
     font-size: 14px;
     border-radius: 25px;
 }
+
+/* Concerns banner */
+#concernbnr{
+    padding: 10px 10px;
+    /* border: 2px solid #ff00cc; */
+}
+    #concernbnr #h2{
+        line-height:1.2;
+        font-size: 2.5em;
+        font-weight: 300;
+        /* border: 2px solid #ffb900; */
+        margin-bottom: 6%;
+    }
+    #concernbnr #bnrcnrcn{
+        /* border: 2px solid #8000ff; */
+        padding: 0 10px;
+    }
+    #concernbnr .text-gray{
+        font-size: 1.3em;
+        /* border: 2px solid red; */
+    }
+
 /* banner container */
 #banner{
     background-image: url(../assets/homepage.png);
-    max-height: 25em;
+    width: 100%;
+    min-height: 60%;
     background-color: rgba(0,0, 0,.2);
-    background-size: cover;
-    background-position: center right;
-}
-.text-gray{
-    font-size: 1rem;
-}
-
-/* testimonial container */
-.testimonial{
-    height:40rem;
-}
-#tstmny-inner{
-    width:50%;
-    position: relative;
     background-position: center;
     background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:10rem;
-    display: block;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    /* border: 2px solid #ffb900; */
 }
-
-.navbar-toggler{
-    background-color: #ffffff;
-}
+#banner #cbanr{
+    margin-top: 2%;
+    /* border: 5px solid red; */
+    }
+    #banner #txth1{
+        margin-top: 6%;
+        /* border:  2px solid #ffffff; */
+    }
+        #banner #txth2{
+            font-size: 38px;
+            font-weight: 800;
+        }
+        #banner #txth2-2{
+            line-height:1.2;
+            font-size: 22px;
+            font-weight:500;
+        }
+    #banner #hdr3{
+        margin-top: 5%;
+        width: 380px;
+        letter-spacing:1px;
+        line-height:0.9;
+        font-size:4em;
+        /* border: 2px solid #d2705c; */
+    }
 
 /* footer button */
 #btncontact1{
@@ -129,94 +158,42 @@ body{
     border-radius: 25px;
     text-decoration: none;
 }
-#footer-txt{
-    font-size: 3em;
-    line-height: 1;
-}
-/* copyrights */
-#copy{
-    font-size: 11px;
-}
+    #footer-txt{
+        font-size: 3em;
+        line-height: 1;
+    }
+    /* copyrights */
+    #copy{
+        font-size: 11px;
+    }
 
-
-
-/**
-<section class="p-0">
-                <div class="row d-flex align-items-center">
-                  <!-- Grid column -->
-                  <div class="col-md-7 col-lg-8 text-center text-md-start">
-                    <!-- Copyright -->
-                    <div class="p-3">
-                      Discipling Another To Love Jesus </br>
-                      © 2020 Copyright: All Rights Reserved
-                    </div>
-                    <!-- Copyright -->
-                  </div>
-                  <!-- Grid column -->
-
-                  <!-- Grid column -->
-                  <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                    <!-- Facebook -->
-                    <a
-                      class="btn btn-outline-light btn-floating m-1"
-                      class="text-white"
-                      role="button"
-                      ><i class="fab fa-facebook-f"></i
-                      ></a>
-
-                    <!-- Twitter -->
-                    <a
-                      class="btn btn-outline-light btn-floating m-1"
-                      class="text-white"
-                      role="button"
-                      ><i class="fab fa-twitter"></i
-                      ></a>
-
-                    <!-- Google -->
-                    <a
-                      class="btn btn-outline-light btn-floating m-1"
-                      class="text-white"
-                      role="button"
-                      ><i class="fab fa-google"></i
-                      ></a>
-
-                    <!-- Instagram -->
-                    <a
-                      class="btn btn-outline-light btn-floating m-1"
-                      class="text-white"
-                      role="button"
-                      ><i class="fab fa-instagram"></i
-                      ></a>
-                  </div>
-                  <!-- Grid column -->
-                </div>
-              </section>
-              <!-- Section: Copyright -->
-
-
-
-#txt{
-    line-height:10vh;
-    word-spacing:5px;
-}
-
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+/* Tool section */
+#tool-section{
     width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
+    height: auto;
+    border: 2px solid red;
+
+}
+#tool-section #imgCon img{
+    max-width:100%;
+    height: 80%;
+    border: 2px solid purple;
 }
 
-
-
-.nav-item .btn{
-    width:120px;
-    border-radius: 45px;
-    background-color:#004569;
+#tool-section #imgTxt{
+    max-width: 30%;
+    color: #d2705c;
+    border: 2px solid black;
 }
-
-d-none d-md-inline**/
-
+#tool-section #imgTxt #imgTxt1{
+    border: 2px solid blue;
+}
+#tool-section #imgTxt #imgTxt2{
+    border: 2px solid blue;
+}
+#tool-section #imgTxt #imgTxt3{
+    border: 2px solid blue;
+}
+#tool-section #imgTxt #imgTxt4{
+    border: 2px solid blue;
+}
