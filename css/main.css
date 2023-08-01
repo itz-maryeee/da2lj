@@ -169,20 +169,15 @@ body{
 
 /* Tool section */
 #tool-section{
-    width: 100%;
-    height: auto;
     border: 2px solid red;
 
 }
 #tool-section #imgCon img{
-    max-width:100%;
-    height: 80%;
     border: 2px solid purple;
+
 }
 
 #tool-section #imgTxt{
-    max-width: 30%;
-    color: #d2705c;
     border: 2px solid black;
 }
 #tool-section #imgTxt #imgTxt1{
