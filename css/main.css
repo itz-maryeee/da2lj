@@ -169,18 +169,25 @@ body{
 
 /* Tool section */
 #tool-section{
+    height: 100%;
     border: 2px solid red;
 
 }
 #tool-section #imgCon img{
-    border: 2px solid purple;
-
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+    padding: 1rem;
+    height: 500px;
+    border: 2px solid rgb(232, 246, 108);
 }
 
 #tool-section #imgTxt{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     border: 2px solid black;
 }
-#tool-section #imgTxt #imgTxt1{
+/* #tool-section #imgTxt #imgTxt1{
     border: 2px solid blue;
 }
 #tool-section #imgTxt #imgTxt2{
@@ -191,4 +198,4 @@ body{
 }
 #tool-section #imgTxt #imgTxt4{
     border: 2px solid blue;
-}
+} */
