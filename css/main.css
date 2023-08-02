@@ -168,34 +168,51 @@ body{
     }
 
 /* Tool section */
-#tool-section{
+
+
+
+
+/* #tool-section{
+    width: 50%;
     height: 100%;
-    border: 2px solid red;
-
-}
-#tool-section #imgCon img{
-    margin-top: 1rem;
-    margin-bottom: 1rem;    
-    padding: 1rem;
-    height: 500px;
-    border: 2px solid rgb(232, 246, 108);
+    padding: 5rem;
+    margin: 3rem 0 3rem 0; 
+    background-image: url(/assets/home.png); 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    border: 2px solid yellow;
 }
 
-#tool-section #imgTxt{
-    margin-top: 1rem;
+
+@media all and (max-width: 480px){
+    #tool-sectio{
+
+        background-image: url(/assets/home.png); 
+        background-position:center;
+        background-repeat: no-repeat; 
+        background-size:cover;
+
+        /* border: 2px solid red; 
+    
+    }
+  }
+#imgTxt{
+    /* margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1rem; 
+    width:50%;
     border: 2px solid black;
 }
-/* #tool-section #imgTxt #imgTxt1{
+#imgTxt #imgTxt1{
     border: 2px solid blue;
 }
-#tool-section #imgTxt #imgTxt2{
+#imgTxt #imgTxt2{
     border: 2px solid blue;
 }
-#tool-section #imgTxt #imgTxt3{
+#imgTxt #imgTxt3{
     border: 2px solid blue;
 }
-#tool-section #imgTxt #imgTxt4{
+#imgTxt #imgTxt4{
     border: 2px solid blue;
 } */
