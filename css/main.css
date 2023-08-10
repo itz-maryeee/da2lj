@@ -11,10 +11,9 @@ body{
 #img-logo{
     width:55px;
 }
-/* .navbar{
-    border: 2px solid red;
-} */
+/* navbar section ------------- */
 .nav-link {
+    padding: 0.7em;
     position: relative;
 }
 .nav-link::after {
@@ -41,8 +40,9 @@ body{
     border:0.1em solid #d2705c;
     color:#d2705c;
     text-align:center;
-    padding:.7em 1.6em;
-    margin:0 0.2em 0.5em 0;
+    padding:.6em 1.6em;
+    /* top right bottom left */
+    margin:0 0.5em 0.5em 0;
     text-decoration:none;
     display:inline-block;
     border-radius:1.4em;
@@ -55,12 +55,35 @@ body{
     color:#fff;
 }
 
-@media all and (max-width:30em){
+@media all and (max-width:768px){
     .nav-item a.btn{
-    display:block;
-    margin:0.2em auto;
+        display:block;
+        margin:0.2em;
+        width: 50%;
+        padding:8px 10px;
+        transition: all 0.2s;
+    }
+    .nav-item a.btn:hover{
+        background-color: #d2705c;
+        color:#fff;
+    }
+    .navbar-toggle{
+        width: 10px;
+        height: 10px;
+    }
+    .offcanvas-header {
+        width: auto;
+    }
+    .offcanvas-header .navbar-brand span {
+        font-size: 0.6em;
+        font-weight: 800;
+    }
+    .offcanvas-body{
+        font-size: 1em;
     }
 }
+
+/* slider section */
 #slider-hero-item{
     min-height: 100%;
     background-color: darkgray;
@@ -85,6 +108,11 @@ body{
     margin-top:20px;
     font-size: 14px;
     border-radius: 25px;
+    transition: all 0.3s;
+}
+#btncontact:hover{
+    background-color: #ffb900;
+    border: 1px solid #ffb900;
 }
 
 /* Concerns banner */
@@ -157,7 +185,7 @@ body{
     #tool-text-box{
         /* border: 2px solid #d2705c; */
         height: auto;
-        padding-top: 5.8rem;
+        padding-top: 9rem;
         
     }
         #tool-text-box #imgTxt1{
@@ -188,57 +216,73 @@ body{
             padding: 10px 45px;
             display: inline-block;
             margin-top:25px;
-            font-size: 18   px;
+            font-size: 18px;
             border-radius: 25px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        #tool-text-box .btn-discover:hover{
+            background-color: #ffb900;
+            border: 1px solid #ffb900;
         }
 
-@media all and (max-width:30em){
+@media all and (max-width:768px){
 
     #tool-section{
-        height: auto;
+        display: block;
+        height: 100%;
     }
     #tool-pic{
-        height: auto;
-        margin-top: 0.5rem;
+        height: 50%;
+        margin-top: 0rem;
         background-image:url(/assets/home.png); background-position: center;
         background-repeat: no-repeat; 
         background-size:cover; 
     }
     #tool-text-box{
         border: 2px solid #d2705c;
-        height: auto;
+        max-height: 50%;
         padding: 0;
         margin: 0;
     }
     
     #tool-text-box #imgTxt1{
         color: #004569;
-        font-size: 3em;
+        font-size: 1.5em;
     }
     #tool-text-box #imgTxt2{
         color: #000;
-        font-size: 1em;
-        padding-top: 0.5em;
+        font-size: 0.7em;
+        padding-top: 0.1em;
     }
     #tool-text-box #imgTxt3{
         color: #000;
-        font-size: 1em;
-        padding-top: 0.5em;
+        font-size: 0.7em;
+        padding-top: 0.1em;
     }
     #tool-text-box #imgTxt4{
         color: #000;
-        font-size: 1em;
-        padding-top: 0.5em;
+        font-size: 0.7em;
+        padding-top: 0.1em;
     }
     #tool-text-box .btn-discover{
-        margin-top: 0.3rem;
+        background-color: #d2705c;
+            border: 1px solid #d2705c;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0,0, 0,.2);
+            text-align: center;
+            padding: 5px 25px;
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 5px;
     }
 }
 /* footer button */
 #btncontact1{
     background-color:#ffb900;
-    border: 2px solid #ffb900;
+    border: 1px solid #ffb900;
     color: #fff;
     text-align: center;
     padding: 10px 25px;
@@ -246,6 +290,11 @@ body{
     font-size: 14px;
     border-radius: 25px;
     text-decoration: none;
+    transition: all 0.2s;
+}
+#btncontact1:hover{
+    background-color: #d2705c;
+    border: 1px solid #d2705c;
 }
     #footer-txt{
         font-size: 3em;
