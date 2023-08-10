@@ -5,36 +5,30 @@
     margin:0;
     font-family: 'Raleway', sans-serif;
 }
-body{
-    box-sizing: content-box;
-}
-#img-logo{
-    width:55px;
-}
+body{box-sizing: content-box;}
+#img-logo{width:55px;}
 /* navbar section ------------- */
 .nav-link {
     padding: 0.7em;
     position: relative;
 }
-.nav-link::after {
-    content: '';
-    opacity: 0;
-    transition: all 0.1s;
-    height: 2px;
-    width: 100%;
-    background-color: #ffb900;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.nav-link:hover::after {
-    opacity: 1;
-}
-.navbar-nav .nav-item a{
-    font-size: 0.8em; 
-    text-transform: uppercase; 
-    font-weight: 500;
-}
+    .nav-link::after {
+        content: '';
+        opacity: 0;
+        transition: all 0.1s;
+        height: 2px;
+        width: 100%;
+        background-color: #ffb900;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .nav-link:hover::after {opacity: 1;}
+    .navbar-nav .nav-item a{
+        font-size: 0.8em; 
+        text-transform: uppercase; 
+        font-weight: 500;
+    }
 .nav-item a.btn {
     background-color: transparent;
     border:0.1em solid #d2705c;
@@ -55,33 +49,33 @@ body{
     color:#fff;
 }
 
-@media all and (max-width:768px){
-    .nav-item a.btn{
-        display:block;
-        margin:0.2em;
-        width: 50%;
-        padding:8px 10px;
-        transition: all 0.2s;
+    @media all and (max-width:768px){
+        .nav-item a.btn{
+            display:block;
+            margin:0.2em;
+            width: 50%;
+            padding:8px 10px;
+            transition: all 0.2s;
+        }
+        .nav-item a.btn:hover{
+            background-color: #d2705c;
+            color:#fff;
+        }
+        .navbar-toggle{
+            width: 10px;
+            height: 10px;
+        }
+        .offcanvas-header {
+            width: auto;
+        }
+        .offcanvas-header .navbar-brand span {
+            font-size: 0.6em;
+            font-weight: 800;
+        }
+        .offcanvas-body{
+            font-size: 1em;
+        }
     }
-    .nav-item a.btn:hover{
-        background-color: #d2705c;
-        color:#fff;
-    }
-    .navbar-toggle{
-        width: 10px;
-        height: 10px;
-    }
-    .offcanvas-header {
-        width: auto;
-    }
-    .offcanvas-header .navbar-brand span {
-        font-size: 0.6em;
-        font-weight: 800;
-    }
-    .offcanvas-body{
-        font-size: 1em;
-    }
-}
 
 /* slider section */
 #slider-hero-item{
@@ -91,30 +85,25 @@ body{
     background-position: center;
     background-size: cover;
 }
-
-#slider-hero-item .carousel-caption{
-    position: absolute;
-}
-
+#slider-hero-item .carousel-caption{position: absolute;}
 /* carousel buttons */
-#btncontact{
-    background-color: #d2705c;
-    border: 1px solid #d2705c;
-    color: #fff;
-    text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
-    text-align: center;
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top:20px;
-    font-size: 14px;
-    border-radius: 25px;
-    transition: all 0.3s;
-}
-#btncontact:hover{
-    background-color: #ffb900;
-    border: 1px solid #ffb900;
-}
-
+    #btncontact{
+        background-color: #d2705c;
+        border: 1px solid #d2705c;
+        color: #fff;
+        text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
+        text-align: center;
+        padding: 10px 25px;
+        display: inline-block;
+        margin-top:20px;
+        font-size: 14px;
+        border-radius: 25px;
+        transition: all 0.3s;
+    }
+    #btncontact:hover{
+        background-color: #ffb900;
+        border: 1px solid #ffb900;
+    }
 /* Concerns banner */
 #concernbnr{
     padding: 10px 10px;
@@ -185,8 +174,7 @@ body{
     #tool-text-box{
         /* border: 2px solid #d2705c; */
         height: auto;
-        padding-top: 9rem;
-        
+        padding-top: 6rem;
     }
         #tool-text-box #imgTxt1{
             color: #004569;
@@ -303,4 +291,161 @@ body{
     /* copyrights */
     #copy{
         font-size: 11px;
+    }
+
+
+/* Testimonial Pic */
+    #testimony-section{
+        height:100%;
+    }
+        #testimony-section #testi-row{
+            /* border: 2px solid #d2705c; */
+            height: 100%;
+        }
+        #testi-row #testi-pic{
+            height: 90%;
+        }
+        #testi-text-box{
+            /* border: 2px solid #d2705c; */
+            height: auto;
+            padding-top: 6rem;
+        }
+            #testi-text-box #imgTxt1{
+                color: #004569;
+                font-size: 3em;
+            }
+            #testi-text-box #imgTxt2{
+                color: #000;
+                font-size: 1.1em;
+                padding-top: 0.5em;
+            }
+            #testi-text-box #imgTxt3{
+                color: #000;
+                font-size: 1.1em;
+                padding-top: 0.1em;
+            }
+            #testi-text-box #imgTxt4{
+                color: #000;
+                font-size: 1.1em;
+                padding-top: 0.1em;
+            }
+    
+    @media all and (max-width:768px){
+    
+        #testimony-section{
+            display: block;
+            height: 100%;
+        }
+        #testi-pic{
+            height: 50%;
+            margin-top: 0rem;
+            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 2.jpg); background-position: center;
+            background-repeat: no-repeat; 
+            background-size:cover; 
+        }
+        #testi-text-box{
+            border: 2px solid #d2705c;
+            max-height: 50%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #testi-text-box #imgTxt1{
+            color: #004569;
+            font-size: 1.5em;
+        }
+        #testi-text-box #imgTxt2{
+            color: #000;
+            font-size: 0.7em;
+            padding-top: 0.1em;
+        }
+        #testi-text-box #imgTxt3{
+            color: #000;
+            font-size: 0.7em;
+            padding-top: 0.1em;
+        }
+        #testi-text-box #imgTxt4{
+            color: #000;
+            font-size: 0.7em;
+            padding-top: 0.1em;
+        }
+    }
+
+
+
+/* testimony with bg color */
+    #testimony2-section{
+        height:100%;
+    }
+        #testimony2-section #testi2-row{
+            /* border: 2px solid #d2705c; */
+            height: 100%;
+        }
+        #testi2-row #testi2-pic{
+            height: 100%;
+        }
+        #testi2-text-box{
+            /* border: 2px solid #d2705c; */
+            height: auto;
+            padding-top: 6rem;
+        }
+            #testi2-text-box #imgTxt1{
+                color: #fff;
+                font-size: 3em;
+            }
+            #testi2-text-box #imgTxt2{
+                color: #fff;
+                font-size: 1.1em;
+                padding-top: 0.5em;
+            }
+            #testi2-text-box #imgTxt3{
+                color: #fff;
+                font-size: 1.1em;
+                padding-top: 0.1em;
+            }
+            #testi2-text-box #imgTxt4{
+                color: #fff;
+                font-size: 1.1em;
+                padding-top: 0.1em;
+            }
+    
+    @media all and (max-width:768px){
+    
+        #testimony2-section{
+            display: block;
+            height: 100%;
+        }
+        #testi2-pic{
+            height: 50%;
+            margin-top: 0rem;
+            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 2.jpg); background-position: center;
+            background-repeat: no-repeat; 
+            background-size:cover; 
+        }
+        #testi2-text-box{
+            /* border: 2px solid #d2705c; */
+            max-height: 50%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #testi2-text-box #imgTxt1{
+            color: #fff;
+            font-size: 1.5em;
+        }
+        #testi2-text-box #imgTxt2{
+            color: #fff;
+            font-size: 0.7em;
+            padding-top: 0.1em;
+        }
+        #testi2-text-box #imgTxt3{
+            color: #fff;
+            font-size: 0.7em;
+            padding-top: 0.1em;
+        }
+        #testi2-text-box #imgTxt4{
+            color: #fff;
+            font-size: 0.7em;
+            padding-top: 0.1em;
+        }
     }
