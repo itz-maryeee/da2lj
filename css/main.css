@@ -84,6 +84,8 @@ body{box-sizing: content-box;}
     position: relative;
     background-position: center;
     background-size: cover;
+    background-origin: padding-box;
+    background-attachment: fixed;
 }
 #slider-hero-item .carousel-caption{position: absolute;}
 /* carousel buttons */
@@ -135,6 +137,8 @@ body{box-sizing: content-box;}
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1rem;
+    background-origin: padding-box;
+    background-attachment: fixed;
     /* border: 2px solid #ffb900; */
 }
 #banner #cbanr{
@@ -176,6 +180,16 @@ body{box-sizing: content-box;}
         height: auto;
         padding-top: 6rem;
     }
+        #tool-pic{
+            background-image:url(/assets/home.png); 
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-size:cover; 
+        }
+        #tool-box{
+            background-origin: padding-box;
+            background-attachment: local scroll;
+        }
         #tool-text-box #imgTxt1{
             color: #004569;
             font-size: 3em;
@@ -307,9 +321,11 @@ body{box-sizing: content-box;}
         #testi-row #testi-pic{
             height: 95%;
             width: 35%;
-            margin-top: 5rem;
-            margin-left: 45em;
-            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 2.jpg); background-position: center;background-repeat: no-repeat; background-size:cover;             background-origin: padding-box;
+            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 2.jpg); 
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-size:cover;             
+            background-origin: padding-box;
             
         }
         #testi-text-box{
@@ -477,10 +493,10 @@ body{box-sizing: content-box;}
     }
 
 /* testimony3 */
-#testimony2-section{
+#testimony3-section{
     height:100%;
 }
-    #testimony2-section #testi2-row{
+    #testimony3-section #testi3-row{
         /* border: 2px solid #d2705c; */
         height: 100%;
     }
@@ -488,9 +504,11 @@ body{box-sizing: content-box;}
         height: 95%;
         width: 35%;
         margin-top: 5rem;
-        margin-left: 45em;
-        background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 4.jpg); background-position: center;
-        background-repeat: no-repeat; background-size:cover;             background-origin: padding-box;
+        margin-left: 0em;
+        background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 4.jpg); 
+        background-position: center;
+        background-repeat: no-repeat; background-size:cover;             
+        background-origin: padding-box;
     }
     #testi3-text-box{
         /* border: 2px solid #d2705c; */
