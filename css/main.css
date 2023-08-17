@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,600;1,800&display=swap');
 
-
 *, ::after, ::before{
     margin:0;
     font-family: 'Raleway', sans-serif;
@@ -48,7 +47,6 @@ body{box-sizing: content-box;}
     background-color: #d2705c;
     color:#fff;
 }
-
     @media all and (max-width:768px){
         .nav-item a.btn{
             display:block;
@@ -82,7 +80,6 @@ body{box-sizing: content-box;}
     min-height: 100%;
     background-color: darkgray;
     position: relative;
-    background-position: center;
     background-size: cover;
     background-origin: padding-box;
     background-attachment: fixed;
@@ -126,7 +123,6 @@ body{box-sizing: content-box;}
         font-size: 1.3em;
         /* border: 2px solid red; */
     }
-
 /* banner container */
 #banner{
     background-image: url(../assets/homepage.png);
@@ -166,7 +162,6 @@ body{box-sizing: content-box;}
         font-size:4em;
         /* border: 2px solid #d2705c; */
     }
-
 /* Tool section */
 #tool-section{
     height:100%;
@@ -227,7 +222,6 @@ body{box-sizing: content-box;}
             background-color: #ffb900;
             border: 1px solid #ffb900;
         }
-
 @media all and (max-width:768px){
 
     #tool-section{
@@ -246,8 +240,7 @@ body{box-sizing: content-box;}
         max-height: 50%;
         padding: 0;
         margin: 0;
-    }
-    
+    } 
     #tool-text-box #imgTxt1{
         color: #004569;
         font-size: 1.5em;
@@ -308,8 +301,6 @@ body{box-sizing: content-box;}
     #copy{
         font-size: 11px;
     }
-
-
 /* Testimonial page Pic */
     #testimony-section{
         height:100%;
@@ -321,7 +312,8 @@ body{box-sizing: content-box;}
         #testi-row #testi-pic{
             height: 95%;
             width: 35%;
-            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 2.jpg); 
+            margin-top: 5em;
+            background-image:url(../assets/2transformed.jpg); 
             background-position: center;
             background-repeat: no-repeat; 
             background-size:cover;             
@@ -366,10 +358,8 @@ body{box-sizing: content-box;}
                 font-size: 1rem;
                 padding-top: 1rem;
                 margin-bottom: 5em;
-            }
-    
+            }   
     @media all and (max-width:768px){
-    
         #testimony-section{
             display: block;
             height: 100%;
@@ -377,7 +367,8 @@ body{box-sizing: content-box;}
         #testi-pic{
             height: 50%;
             margin-top: 0rem;
-            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 2.jpg); background-position: center;
+            background-image:url(../assets/2transformed.jpg); 
+            background-position: center;
             background-repeat: no-repeat; 
             background-size:cover; 
         }
@@ -387,7 +378,6 @@ body{box-sizing: content-box;}
             padding: 0;
             margin: 0;
         }
-        
         #testi-text-box #txt-name{
             color: #004569;
             font-size: 2.7rem;
@@ -410,9 +400,6 @@ body{box-sizing: content-box;}
             padding-top: 0.5rem;
         }
     }
-
-
-
 /* testimony with bg color */
     #testimony2-section{
         height:100%;
@@ -423,7 +410,10 @@ body{box-sizing: content-box;}
         }
         #testi2-row #testi2-pic{
             height: 100%;
-            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 3.jpg); background-position-x:center;background-repeat: no-repeat; background-size: cover; 
+            background-image:url(../assets/2transformed2.jpg); 
+            background-position-x:center;
+            background-repeat: no-repeat; 
+            background-size: cover; 
             background-origin: padding-box;
         }
         #testi2-text-box{
@@ -449,8 +439,6 @@ body{box-sizing: content-box;}
                 font-size: 1em;
                 padding-top: 0.1em;
             }
-
-    
     @media all and (max-width:768px){
     
         #testimony2-section{
@@ -460,7 +448,8 @@ body{box-sizing: content-box;}
         #testi2-pic{
             height: 50%;
             margin-top: 0rem;
-            background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 2.jpg); background-position: center;
+            background-image:url(../assets/2transformed2.jpg); 
+            background-position: center;
             background-repeat: no-repeat; 
             background-size:cover; 
         }
@@ -470,7 +459,6 @@ body{box-sizing: content-box;}
             padding: 0;
             margin: 0;
         }
-        
         #testi2-text-box #txt-name{
             color: #fff;
             font-size: 5em;
@@ -490,8 +478,7 @@ body{box-sizing: content-box;}
             font-size: 0.7em;
             padding-top: 0.1em;
         }
-    }
-
+}
 /* testimony3 */
 #testimony3-section{
     height:100%;
@@ -503,12 +490,13 @@ body{box-sizing: content-box;}
     #testi3-row #testi3-pic{
         height: 95%;
         width: 35%;
-        margin-top: 5rem;
-        margin-left: 0em;
-        background-image:url(/assets/2.\ See\ Transformed\ Lives_Photo\ 4.jpg); 
+        margin-top: 5em;
+        background-image:url(../assets/2transformed3.jpg); 
         background-position: center;
-        background-repeat: no-repeat; background-size:cover;             
+        background-repeat: no-repeat; 
+        background-size:cover;             
         background-origin: padding-box;
+        
     }
     #testi3-text-box{
         /* border: 2px solid #d2705c; */
@@ -549,14 +537,11 @@ body{box-sizing: content-box;}
             padding-top: 0.8rem;
             margin-bottom: 5em;
         }
-
 /* testimony page footer */
-
 footer{
     background-color: #f3f5f8;
     color: #004569;
 }
-
     #btncontact-footer{
         background-color: #004569;
         color: #fff;
@@ -578,4 +563,91 @@ footer{
         line-height: 1.1;
     }
 
-    
+/* give page */
+#btncontact2{
+    background-color: #004569;
+    border: 1px solid #004569;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
+    text-align: center;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top:20px;
+    font-size: 14px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+#btncontact2:hover{
+    background-color: #ffb900;
+    border: 1px solid #ffb900;
+}
+
+#give-banner-text{
+    height: 350px;
+    /* border: 2px solid #d2705c; */
+}
+#give-banner-holder{
+    height: 350px;
+    width: 50%;
+    padding-left: 5em;
+    padding-bottom: 1em;
+    padding-top: 5em;
+    /* border: 2px solid #d2705c; */
+}
+    #give-title{
+        font-size: 3.4em;
+        line-height: 1.1;
+    }
+    #give-banner-btn{
+        margin-top: 1em;
+        padding: 9px 25px;
+        background-color: #004569;
+        border-radius: 25px;
+    }
+    #give-banner-btn a{
+        text-decoration: none;
+    }
+#give-banner2-holder{
+    width: 50%;
+    font-size: 1.3em;
+    padding: 3.5em;
+    /* border: 2px solid #004569; */
+}
+
+.carousel-caption #quote-pic1{
+    /* border: 2px solid #d2705c; */
+    height: 6%;
+    width: 6%;
+    margin-left: 28em;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);   
+}
+#give-text{
+    font-size: 2em;
+}
+
+#give-banner-text2{
+    height: 350px;
+    /* border: 2px solid #d2705c; */
+}
+#give-banner-holder{
+    height: 350px;
+    width: 50%;
+    padding-left: 5em;
+    padding-bottom: 1em;
+    padding-top: 5em;
+    /* border: 2px solid #d2705c; */
+}
+    #give-title2{
+        font-size: 3.4em;
+        line-height: 1.1;
+    }
+    #give-banner-btn2{
+        margin-top: 1em;
+        padding: 9px 25px;
+        background-color: #004569;
+        border-radius: 25px;
+    }
+    #give-banner-btn2 a{
+        text-decoration: none;
+    }
