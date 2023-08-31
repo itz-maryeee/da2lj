@@ -5,8 +5,11 @@
     font-family: 'Raleway', sans-serif;
 }
 body{box-sizing: content-box;}
+
+/* ------------------------------------------------------------------ navbar section ----------------------------------------------------*/
+
 #img-logo{width:55px;}
-/* navbar section ------------- */
+
 .nav-link {
     padding: 0.7em;
     position: relative;
@@ -75,7 +78,7 @@ body{box-sizing: content-box;}
         }
     }
 
-/* slider section */
+/* --------------------------------------------------------------------- slider section ------------------------------------------------- */
 #slider-hero-item{
     min-height: 100%;
     background-color: darkgray;
@@ -85,7 +88,7 @@ body{box-sizing: content-box;}
     background-attachment: fixed;
 }
 #slider-hero-item .carousel-caption{position: absolute;}
-/* carousel buttons */
+/* --------------------------------------------------------------------- carousel buttons ------------------------------------------------*/
     #btncontact{
         background-color: #d2705c;
         border: 1px solid #d2705c;
@@ -103,7 +106,7 @@ body{box-sizing: content-box;}
         background-color: #ffb900;
         border: 1px solid #ffb900;
     }
-/* Concerns banner */
+/* -------------------------------------------------------------------------- Concerns banner ------------------------------------------- */
 #concernbnr{
     padding: 10px 10px;
     /* border: 2px solid #ff00cc; */
@@ -123,7 +126,7 @@ body{box-sizing: content-box;}
         font-size: 1.3em;
         /* border: 2px solid red; */
     }
-/* banner container */
+/* -------------------------------------------------------------------------------- banner container ------------------------------------- */
 #banner{
     background-image: url(../assets/homepage.png);
     width: 100%;
@@ -135,7 +138,6 @@ body{box-sizing: content-box;}
     padding: 1rem;
     background-origin: padding-box;
     background-attachment: fixed;
-    /* border: 2px solid #ffb900; */
 }
 #banner #cbanr{
     margin-top: 2%;
@@ -143,7 +145,6 @@ body{box-sizing: content-box;}
     }
     #banner #txth1{
         margin-top: 6%;
-        /* border:  2px solid #ffffff; */
     }
         #banner #txth2{
             font-size: 38px;
@@ -160,9 +161,8 @@ body{box-sizing: content-box;}
         letter-spacing:1px;
         line-height:0.9;
         font-size:4em;
-        /* border: 2px solid #d2705c; */
     }
-/* Tool section */
+/* ------------------------------------------------------------------------ Tool section ------------------------------------------------ */
 #tool-section{
     height:100%;
 }
@@ -274,7 +274,7 @@ body{box-sizing: content-box;}
             margin-top: 5px;
     }
 }
-/* footer button */
+/* ----------------------------------------------------------------------------- footer button */
 #btncontact1{
     background-color:#ffb900;
     border: 1px solid #ffb900;
@@ -301,7 +301,7 @@ body{box-sizing: content-box;}
     #copy{
         font-size: 11px;
     }
-/* Testimonial page Pic */
+/* --------------------------------------------------------------------------- Testimonial page Pic */
     #testimony-section{
         height:100%;
     }
@@ -537,7 +537,9 @@ body{box-sizing: content-box;}
             padding-top: 0.8rem;
             margin-bottom: 5em;
         }
-/* testimony page footer */
+
+
+/* --------------------------------------------------------------------------- testimony page footer ------------------------------------ */
 footer{
     background-color: #f3f5f8;
     color: #004569;
@@ -563,7 +565,8 @@ footer{
         line-height: 1.1;
     }
 
-/* give page */
+    
+/* ------------------------------------------------------------------------------ give page --------------------------------------------- */
 #btncontact2{
     background-color: #004569;
     border: 1px solid #004569;
@@ -582,37 +585,48 @@ footer{
     border: 1px solid #ffb900;
 }
 
-#give-banner-text{
-    height: 350px;
-    /* border: 2px solid #d2705c; */
+.container-holder{
+    border: 2px solid #004569;
+    height: 300px;
 }
-#give-banner-holder{
-    height: 350px;
-    width: 50%;
-    padding-left: 5em;
-    padding-bottom: 1em;
-    padding-top: 5em;
-    /* border: 2px solid #d2705c; */
-}
-    #give-title{
-        font-size: 3.4em;
-        line-height: 1.1;
+    .title{
+        border: 2px solid #d2705c;
+        width: 50%;
     }
-    #give-banner-btn{
-        margin-top: 1em;
-        padding: 9px 25px;
-        background-color: #004569;
-        border-radius: 25px;
+    .fs-title{
+        font-size: 3.5em;
     }
-    #give-banner-btn a{
+    .btns{
         text-decoration: none;
+        color: #fff;
+        font-size: 1em;
+
+        border: 1px solid #004569;
+        background-color: #004569;
+        border-radius: 20px;
     }
-#give-banner2-holder{
-    width: 50%;
-    font-size: 1.3em;
-    padding: 3.5em;
-    /* border: 2px solid #004569; */
+
+    .content-body{
+        border: 2px solid #d2705c;
+        width: 50%;
+        font-size: 1.5em;
+    }
+
+.btns:hover{
+    background-color: #ffb900;
+    border: 1px solid #ffb900;
 }
+
+@media screen and(max-width:768px) {
+    .fs-title{
+        font-size: 1.5em;
+    }
+    
+}
+
+
+
+
 
 .carousel-caption #quote-pic1{
     /* border: 2px solid #d2705c; */
