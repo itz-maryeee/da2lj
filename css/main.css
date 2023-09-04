@@ -9,6 +9,7 @@ body{box-sizing: content-box;}
 #img-logo{width:55px;}
 
 /* navbar section ------------- */
+
 .nav-link {
     /* padding: 0.7em; */
     position: relative;
@@ -91,7 +92,6 @@ body{box-sizing: content-box;}
         }
     }
 
-/* slider section */
 #slider-hero-item{
     min-height: 600px;
     background-color: darkgray;
@@ -102,7 +102,6 @@ body{box-sizing: content-box;}
 }
 #slider-hero-item .carousel-caption{
     position: absolute;}
-/* carousel buttons */
     #btncontact{
         background-color: #d2705c;
         border: 1px solid #d2705c;
@@ -120,7 +119,7 @@ body{box-sizing: content-box;}
         background-color: #ffb900;
         border: 1px solid #ffb900;
     }
-    /* Concerns banner */
+ 
     #concernbnr #h2{
         line-height:1.2;
         font-size: 2.5em;
@@ -159,7 +158,6 @@ body{box-sizing: content-box;}
     padding: 1rem;
     background-origin: padding-box;
     background-attachment: fixed;
-    /* border: 2px solid #ffb900; */
 }
 #banner #cbanr{
     margin-top: 5%;
@@ -172,6 +170,7 @@ body{box-sizing: content-box;}
         margin-bottom: 1.5%;
 
         /* border:  2px solid #ffffff; */
+        margin-top: 6%;
     }
         #banner #txth2{
             font-size: 2.1em;
@@ -333,11 +332,6 @@ body{box-sizing: content-box;}
     #copy{
         font-size: 14px;
     }
-
-
-
-
-
 
     
 /* Testimonial page Pic */
@@ -524,16 +518,6 @@ footer{
     .Socicons{
         color: #004569;
     }
-
-
-
-    
-
-
-
-
-
-
 
 
 /* give page */
@@ -730,7 +714,7 @@ footer{
     @media all and (max-width:576px){
         .bnr .txt-title1{
             width: 100%;
-            font-size: 3.5em;
+            font-size: 3em;
             /* border: 2px solid #8000ff; */
         } 
         .bnr .bnr-txt{
