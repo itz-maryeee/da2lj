@@ -121,58 +121,82 @@ body{box-sizing: content-box;}
     }
  
 /* Plain Banner */
-    .plainBanner .leftside{
+    .plainBanner{
+        padding:6% 0;
+        width: 100%;
+        min-height: 300px;
+        /* border: 2px solid red; */
+    }
+    /* .plain-holder{
+        /* border: 2px solid #b74444;   
+
+    } */
+    .plainBanner .plain-holder .leftside{
         line-height:1.2;
-        font-size: 2em;
+        font-size: 2.2em;
         font-weight: 300;
+        width: 50%;
 
         /* border: 2px solid #ffb900;   */
     }
-    .plainBanner .text-gray{
-        font-size: 1.3em;
-        width: auto;
+    .plainBanner .plain-holder .text-gray{
+        font-size: 1.4em;
+        width: 40%;
 
         /* border: 2px solid #8000ff; */
     }
-    @media all and (max-width:576px){
-        .plainBanner .leftside{
-            font-size: 2em;
-        }  
-        .plainBanner .text-gray{
-            font-size: 1em;
+    @media screen and (max-width:992px) {
+        .plainBanner{
+            padding-top:6%;
+            width: 100%;
+            min-height: 300px;
+            display: flex;
+            /* border: 2px solid red; */
         }
+
+        .plainBanner .plain-holder .leftside{
+            line-height:1.2;
+            font-size: 2.2em;
+            font-weight: 300;
+            width: 100%;
+    
+            /* border: 2px solid #ffb900;   */
+        }
+        .plainBanner .plain-holder .text-gray{
+            font-size: 1.4em;
+            width: 100%;
+    
+            /* border: 2px solid #8000ff; */
+        } 
     }
 
 /* banner container */
     .bgBanner{
         background-image: url(/assets/homepage.webp);
         width: 100%;
-        min-height: 300px;
+        min-height: 200px;
         background-color: rgba(0,0, 0,.2);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 1rem;
-        background-origin: padding-box;
         background-attachment: fixed;
     }
     .bgBanner .bgBanner-holder{
-        margin-top: 2%;
-        height: 250px;
-        /* border: 5px solid red; */
+        margin: 0 auto;
+        padding:6% 0;
+
+        /* border: 2px solid red; */
     }   
-        .bgBanner .blank{
-            width: 50%;
-        }
+
         .bgBanner .header-left{
-            width: 50%;
-            font-size: 4em;
+            width: 35%;
+            font-size: 4.4em;
             line-height: 0.9;
 
             /* border:  2px solid #ffffff; */
         }
         .bgBanner .body-right{
-            width: 50%;
+            width: 40%;
 
             /* border: 2px solid #8000ff; */
         }
@@ -185,29 +209,40 @@ body{box-sizing: content-box;}
                 font-weight:500;
             }
     
-    @media all and (max-width:768px){
-        .bgBanner-holder{
-            margin-top: 10%;
-            min-height: 10vh;
-            /* border: 5px solid red; */
-        }
-        .bgBanner .header-left{
+    @media screen and (max-width:768px){
+        .bgBanner{
             width: 100%;
-            font-size:3em;
-            /* border: 2px solid yellow; */
+            max-height: 60vh;
         }
-        .bgBanner .body-right{
-            width: 100%;
-            height: auto;
-            /* border: 2px solid #d2705c; */
-        }
-        .bgBanner .body-title{
-            font-size: 1.8em;
-            font-weight: 800;
-        }
-        .bgBanner .body-text{
-            font-size: 1.2em;
-        } 
+        .bgBanner .bgBanner-holder{
+            margin: 0 auto;
+            padding-top:10%;
+    
+            /* border: 2px solid red; */
+        }   
+    
+            .bgBanner .header-left{
+                width: 40%;
+                font-size: 2.8em;
+                line-height: 0.95;
+    
+                border:  2px solid #ffffff;
+            }
+            .bgBanner .body-right{
+                width: 40%;
+                padding: auto;
+                margin-left: auto;
+    
+                border: 2px solid #8000ff;
+            }
+                .bgBanner .body-title{
+                    font-weight: 700;
+                }
+                .bgBanner .body-text{
+                    line-height:1.1;
+                    font-size: 1em;
+                    font-weight:500;
+                }
     }
     @media all and(max-width:330px) {
         .bgBanner-holder{
@@ -233,7 +268,7 @@ body{box-sizing: content-box;}
             font-size: 11px;
         } 
     }
-    @media all and (max-width:576px){
+    @media all and (max-width:480px){
         .bgBanner-holder{
             margin-top: 5%;
             min-height: 50vh;
