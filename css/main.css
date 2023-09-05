@@ -8,6 +8,60 @@
 body{box-sizing: content-box;}
 #img-logo{width:55px;}
 
+/* buttons */
+
+/* red */
+.btn-discover{
+    background-color: #d2705c;
+    border: 1px solid #d2705c;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
+    text-align: center;
+    padding: 10px 35px;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-discover:hover, .btn-discover:focus{
+    background-color: #ffb900;
+    border: 1px solid #ffb900;
+}
+
+/* yellow */
+.footer-btn{
+    background-color:#ffb900;
+    border: 1px solid #ffb900;
+    color: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.2s;  
+}
+.footer-btn:hover{
+    background-color:#fff;
+    border: 1px solid #ffb900;
+    color: #ffb900;
+    /* border: 1px solid #d2705c; */
+}
+
+@media screen and (max-width:992px) {
+    .btn-discover{
+        margin: 0;
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+    .footer-btn{
+        padding: 8px 25px;
+        font-size:12px;
+    }
+}
+
 /* navbar section ------------- */
 
 .nav-link {
@@ -119,7 +173,8 @@ body{box-sizing: content-box;}
         background-color: #ffb900;
         border: 1px solid #ffb900;
     }
- 
+
+
 /* Plain Banner */
     .plainBanner{
         padding:6% 0;
@@ -182,21 +237,20 @@ body{box-sizing: content-box;}
         background-attachment: fixed;
     }
     .bgBanner .bgBanner-holder{
-        margin: 0 auto;
         padding:6% 0;
-
+        width: 100%;
         /* border: 2px solid red; */
     }   
-
         .bgBanner .header-left{
-            width: 35%;
-            font-size: 4.4em;
+            width: 30%;
+            font-size: 4em;
             line-height: 0.9;
 
             /* border:  2px solid #ffffff; */
         }
         .bgBanner .body-right{
             width: 40%;
+            margin-left: auto;
 
             /* border: 2px solid #8000ff; */
         }
@@ -207,93 +261,36 @@ body{box-sizing: content-box;}
                 line-height:1.1;
                 font-size: 1.5em;
                 font-weight:500;
-                width: 60%;
-            }
-    
-    @media screen and (max-width:768px){
-        .bgBanner{
-            width: 100%;
-            max-height: 60vh;
-        }
+                width: 100%;
+            }  
+    @media screen and (max-width:992px) {
         .bgBanner .bgBanner-holder{
-            margin: 0 auto;
-            padding-top:10%;
-    
+            padding:6% 0;
+            width: 100%;
             /* border: 2px solid red; */
         }   
-    
             .bgBanner .header-left{
-                width: 40%;
-                font-size: 2.8em;
-                line-height: 0.95;
+                width: 100%;
+                font-size: 3em;
+                line-height: 0.9;
     
-                border:  2px solid #ffffff;
+                /* border:  2px solid #ffffff; */
             }
             .bgBanner .body-right{
-                width: 40%;
-                padding: auto;
+                width: 100%;
                 margin-left: auto;
     
-                border: 2px solid #8000ff;
+                /* border: 2px solid #8000ff; */
             }
                 .bgBanner .body-title{
                     font-weight: 700;
                 }
                 .bgBanner .body-text{
                     line-height:1.1;
-                    font-size: 1em;
+                    font-size: 1.5em;
                     font-weight:500;
-                }
-    }
-    @media all and(max-width:330px) {
-        .bgBanner-holder{
-            margin-top: 10%;
-            min-height: 60vh;
-            /* border: 5px solid red; */
-        }
-        .bgBanner .header-left{
-            width: 100%;
-            font-size:13px;
-            /* border: 2px solid yellow; */
-        }
-        .bgBanner .body-right{
-            width: 100%;
-            height: auto;
-            /* border: 2px solid #d2705c; */
-        }
-        .bgBanner .body-title{
-            font-size: 10px;
-            font-weight: 800;
-        }
-        .bgBanner .body-text{
-            font-size: 11px;
-        } 
-    }
-    @media all and (max-width:480px){
-        .bgBanner-holder{
-            margin-top: 5%;
-            min-height: 50vh;
-            /* border: 5px solid red; */
-        }
-        .bgBanner .header-left{
-            width: 100%;
-            height: fit-content;
-            font-size: 3em;
-            /* border: 2px solid yellow; */
-        }
-        .bgBanner .body-right{
-            margin-top: 5%;
-            width: 100%;
-            /* height: 60%; */
-            /* border: 2px solid #d2705c; */
-        }
-        .bgBanner .body-title{
-            font-size: 1.8em;
-            font-weight: 800;
-        }
-        .bgBanner .body-text{
-            font-size: 1.5em;
-        }
+                    width: 100%;
+                }   
     }
 
 
@@ -323,145 +320,39 @@ body{box-sizing: content-box;}
         }
         .tool-txt{
             color: #000;
-            font-size: 1em;
+            font-size: 1.2em;
         }
-        #tool-text-box .btn-discover{
-            background-color: #d2705c;
-            border: 1px solid #d2705c;
-            color: #fff;
-            text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
-            text-align: center;
-            padding: 10px 35px;
-            display: inline-block;
-            font-size: 18px;
-            border-radius: 25px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.2s;
+        
+    @media screen and (max-width:992px) {
+        #tool-pic{
+            width: 100%;
+            height: 50%;
+            margin: auto;
         }
-        #tool-text-box .btn-discover:hover, .btn-discover:focus{
-            background-color: #ffb900;
-            border: 1px solid #ffb900;
+        #tool-box{
+            width: 300px;
+            background-attachment: local scroll;
         }
-        @media (max-width:360px){
+        #tool-text-box #imgTxt1{
+            color: #004569;
+            padding-bottom: 2px;
+            font-size: 32px;
+        }
+        .tool-txt{
+            color: #000;
+            font-size: 14px;
+        }  
+    }
 
-            #tool-section{
-                display: block;
-                height: auto;
-            }
-            #tool-pic{
-                width: 100%;
-                margin: 0 auto;
-                background-image:url(/assets/home.webp); background-position: center;
-                background-repeat: no-repeat; 
-                background-size:cover; 
-            }
-            #tool-text-box{
-                /* border: 2px solid #d2705c; */
-                height:60vh;
-                margin-top:-40px;
-            } 
-            #tool-text-box #imgTxt1{
-                color: #004569;
-                font-size: 1em;
-           }
-            .tool-txt{
-                color: #000;
-                font-size: 2px;
-                padding-top: 1px;
-            }
-            #tool-text-box .btn-discover, .btn-discover:focus {
-                background-color: #d2705c;
-                    border: 1px solid #d2705c;
-                    color: #fff;
-                    text-shadow: 1px 1px 1px rgba(0,0, 0,.2);
-                    text-align: center;
-                    padding: 4px 15px;
-                    display: inline-block;
-                    font-size: 8px;
-                    border-radius: 25px;
-                    text-decoration: none;
-            }
-        }
-        @media (max-width:576px){
 
-            #tool-section{
-                display: block;
-                height: 100%;
-            }
-            #tool-pic{
-                height: 30%;
-                width: 50%;
-                margin: 0 auto;
-                background-image:url(/assets/home.webp); background-position: center;
-                background-repeat: no-repeat; 
-                background-size:cover; 
-            }
-            #tool-text-box{
-                /* border: 2px solid #d2705c; */
-                max-height: 100vh;
-                margin: 0;
-            } 
-            #tool-text-box #imgTxt1{
-                color: #004569;
-                font-size: 1.8em;
-            }
-            .tool-txt{
-                color: #000;
-                font-size: .956em;
-                padding-top: 1px;
-            }
-            #tool-text-box .btn-discover, .btn-discover:focus {
-                background-color: #d2705c;
-                    border: 1px solid #d2705c;
-                    color: #fff;
-                    text-shadow: 1px 1px 1px rgba(0,0, 0,.2);
-                    text-align: center;
-                    padding: 8px 25px;
-                    display: inline-block;
-                    font-size: 12px;
-                    border-radius: 25px;
-                    text-decoration: none;
-                    /* margin-top: 1px;
-                    margin-bottom: 2px; */
-            }
-        }
-        @media (max-width:998px){
-            #tool-pic{
-                height: 50%;
-                margin: 0 auto;
-            }
-            #tool-text-box{
-                /* border: 2px solid #d2705c; */
-                margin-top: -30px;
-            } 
-        }
 
-/* footer button */
-#btncontact1{
-    background-color:#ffb900;
-    border: 1px solid #ffb900;
-    color: #fff;
-    text-align: center;
-    padding: 10px 25px;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: all 0.2s;
-}
-#btncontact1:hover{
-    background-color:#fff;
-    border: 1px solid #ffb900;
-    color: #ffb900;
-    /* border: 1px solid #d2705c; */
-}
-    #footer-txt{
+/* footer */
+    .footer-txt{
         font-size: 3em;
         line-height: 1;
     }
 /* copyrights */
-    #copy{
+    .copy{
         font-size: 14px;
     }
 
