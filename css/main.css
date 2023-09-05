@@ -120,94 +120,146 @@ body{box-sizing: content-box;}
         border: 1px solid #ffb900;
     }
  
-    #concernbnr #h2{
+/* Plain Banner */
+    .plainBanner .leftside{
         line-height:1.2;
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 300;
+
         /* border: 2px solid #ffb900;   */
     }
-    #concernbnr #bnrcnrcn{
-        width: auto;
-        /* border: 2px solid #8000ff; */
-    }
-    #concernbnr .text-gray{
+    .plainBanner .text-gray{
         font-size: 1.3em;
         width: auto;
-        /* border: 2px solid red; */
+
+        /* border: 2px solid #8000ff; */
     }
     @media all and (max-width:576px){
-        #concernbnr #h2{
-            line-height:1.1;
+        .plainBanner .leftside{
             font-size: 2em;
-            font-weight: 300;
         }  
-        #concernbnr .text-gray{
+        .plainBanner .text-gray{
             font-size: 1em;
         }
     }
 
 /* banner container */
-#banner{
-    background-image: url(../assets/homepage.png);
-    width: 100%;
-    min-height: 400px;
-    background-color: rgba(0,0, 0,.2);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1rem;
-    background-origin: padding-box;
-    background-attachment: fixed;
-}
-#banner #cbanr{
-    margin-top: 5%;
-    width: auto;
+    .bgBanner{
+        background-image: url(/assets/homepage.webp);
+        width: 100%;
+        min-height: 300px;
+        background-color: rgba(0,0, 0,.2);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 1rem;
+        background-origin: padding-box;
+        background-attachment: fixed;
+    }
+    .bgBanner .bgBanner-holder{
+        margin-top: 2%;
+        height: 250px;
+        /* border: 5px solid red; */
+    }   
+        .bgBanner .blank{
+            width: 50%;
+        }
+        .bgBanner .header-left{
+            width: 50%;
+            font-size: 4em;
+            line-height: 0.9;
 
-    /* border: 5px solid red; */
-    }
-    #banner #txth1{
-        width: 350px;
-        margin-bottom: 1.5%;
+            /* border:  2px solid #ffffff; */
+        }
+        .bgBanner .body-right{
+            width: 50%;
 
-        /* border:  2px solid #ffffff; */
-        margin-top: 6%;
-    }
-        #banner #txth2{
-            font-size: 2.1em;
-            font-weight: 800;
+            /* border: 2px solid #8000ff; */
         }
-        #banner #txth2-2{
-            line-height:1.2;
-            font-size: 1.8em;
-            font-weight:500;
+            .bgBanner .body-title{
+                font-weight: 700;
+            }
+            .bgBanner .body-text{
+                line-height:1.1;
+                font-size: 1.5em;
+                font-weight:500;
+            }
+    
+    @media all and (max-width:768px){
+        .bgBanner-holder{
+            margin-top: 10%;
+            min-height: 10vh;
+            /* border: 5px solid red; */
         }
-    #banner #hdr3{
-        width: 380px;
-        letter-spacing:1px;
-        line-height:0.9;
-        font-size:4.1em;
-        margin-bottom: 5%;
-        /* border: 2px solid #d2705c; */
-    }
-    @media all and (max-width:576px){
-        #banner #txth2{
-            font-size: 2em;
-            font-weight: 800;
+        .bgBanner .header-left{
+            width: 100%;
+            font-size:3em;
+            /* border: 2px solid yellow; */
         }
-        #banner #txth2-2{
-            line-height:1;
-            font-size: 1.2em;
-            font-weight:500;
-        }
-        #banner #hdr3{
-            width: 380px;
-            letter-spacing:1px;
-            line-height:0.9;
-            font-size:3.5em;
-            margin-bottom: 5%;
+        .bgBanner .body-right{
+            width: 100%;
+            height: auto;
             /* border: 2px solid #d2705c; */
         }
+        .bgBanner .body-title{
+            font-size: 1.8em;
+            font-weight: 800;
+        }
+        .bgBanner .body-text{
+            font-size: 1.2em;
+        } 
     }
+    @media all and(max-width:330px) {
+        .bgBanner-holder{
+            margin-top: 10%;
+            min-height: 60vh;
+            /* border: 5px solid red; */
+        }
+        .bgBanner .header-left{
+            width: 100%;
+            font-size:13px;
+            /* border: 2px solid yellow; */
+        }
+        .bgBanner .body-right{
+            width: 100%;
+            height: auto;
+            /* border: 2px solid #d2705c; */
+        }
+        .bgBanner .body-title{
+            font-size: 10px;
+            font-weight: 800;
+        }
+        .bgBanner .body-text{
+            font-size: 11px;
+        } 
+    }
+    @media all and (max-width:576px){
+        .bgBanner-holder{
+            margin-top: 5%;
+            min-height: 50vh;
+            /* border: 5px solid red; */
+        }
+        .bgBanner .header-left{
+            width: 100%;
+            height: fit-content;
+            font-size: 3em;
+            /* border: 2px solid yellow; */
+        }
+        .bgBanner .body-right{
+            margin-top: 5%;
+            width: 100%;
+            /* height: 60%; */
+            /* border: 2px solid #d2705c; */
+        }
+        .bgBanner .body-title{
+            font-size: 1.8em;
+            font-weight: 800;
+        }
+        .bgBanner .body-text{
+            font-size: 1.5em;
+        }
+    }
+
 
 /* Tool section */
 #tool-section{
@@ -219,7 +271,7 @@ body{box-sizing: content-box;}
         #tool-pic{
             width: 500px;
             height: 600px;
-            background-image:url(/assets/home.png); 
+            background-image:url(/assets/home.webp); 
             background-position: center;
             background-repeat: no-repeat; 
             background-size:cover; 
@@ -256,54 +308,88 @@ body{box-sizing: content-box;}
             background-color: #ffb900;
             border: 1px solid #ffb900;
         }
+        @media all and (max-width:315px){
+            #tool-pic{
+                height: 20%;
+                width: 100%;
+                margin-left: 0;
+                background-image:url(/assets/home.webp); background-position: center;
+                background-repeat: no-repeat; 
+                background-size:cover; 
+                /* border: 1px solid #ffb900; */
+
+            }
+            #tool-text-box #imgTxt1{
+                color: #004569;
+                font-size: 6px;
+            }
+            .tool-txt{
+                color: #000;
+                font-size: 2px;
+            }
+            #tool-text-box .btn-discover, .btn-discover:focus {
+                background-color: #d2705c;
+                    border: 1px solid #d2705c;
+                    color: #fff;
+                    text-shadow: 1px 1px 1px rgba(0,0, 0,.2);
+                    text-align: center;
+                    padding: 8px 25px;
+                    display: inline-block;
+                    font-size: 11px;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    margin-top: 1px;
+            }
+        }
+        @media all and (max-width:576px){
+
+            #tool-section{
+                display: block;
+                height: 100%;
+            }
+            #tool-pic{
+                height: 30%;
+                width: 50%;
+                /* margin-left: 1%; */
+                background-image:url(/assets/home.webp); background-position: center;
+                background-repeat: no-repeat; 
+                background-size:cover; 
+            }
+            #tool-text-box{
+                /* border: 2px solid #d2705c; */
+                max-height: 100%;
+                margin: 0;
+            } 
+            #tool-text-box #imgTxt1{
+                color: #004569;
+                font-size: 1.8em;
+            }
+            .tool-txt{
+                color: #000;
+                font-size: .956em;
+                padding-top: 1px;
+            }
+            #tool-text-box .btn-discover, .btn-discover:focus {
+                background-color: #d2705c;
+                    border: 1px solid #d2705c;
+                    color: #fff;
+                    text-shadow: 1px 1px 1px rgba(0,0, 0,.2);
+                    text-align: center;
+                    padding: 8px 25px;
+                    display: inline-block;
+                    font-size: 12px;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    margin-top: 1px;
+                    margin-bottom: 2px;
+            }
+        }
         @media all and (max-width:998px){
             #tool-pic{
                 height: 40%;
                 margin-left: 20%;
             }
         }
-@media all and (max-width:576px){
-
-    #tool-section{
-        display: block;
-        height: 100%;
-    }
-    #tool-pic{
-        height: 29%;
-        margin-left: 1%;
-        background-image:url(/assets/home.png); background-position: center;
-        background-repeat: no-repeat; 
-        background-size:cover; 
-    }
-    #tool-text-box{
-        /* border: 2px solid #d2705c; */
-        max-height: 100%;
-        margin: 0;
-    } 
-    #tool-text-box #imgTxt1{
-        color: #004569;
-        font-size: 2em;
-    }
-    .tool-txt{
-        color: #000;
-        font-size: 1em;
-        padding-top: 1px;
-    }
-    #tool-text-box .btn-discover, .btn-discover:focus {
-        background-color: #d2705c;
-            border: 1px solid #d2705c;
-            color: #fff;
-            text-shadow: 1px 1px 1px rgba(0,0, 0,.2);
-            text-align: center;
-            padding: 5px 20px;
-            display: inline-block;
-            font-size: 12px;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-top: 1px;
-            margin-bottom: 2px;
-    }
-}
 
 /* footer button */
 #btncontact1{
