@@ -43,13 +43,31 @@ body{box-sizing: content-box;}
     text-decoration: none;
     transition: all 0.2s;  
 }
-.footer-btn:hover{
+.footer-btn:hover,.footer-btn:focus{
     background-color:#fff;
     border: 1px solid #ffb900;
     color: #ffb900;
     /* border: 1px solid #d2705c; */
 }
-
+/* blue btn */
+.btn-blue{
+    background-color:#004569;
+    border: 1px solid #004569;
+    color: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.2s;  
+}
+.btn-blue:hover, .btn-blue:focus{
+    background-color:#fff;
+    border: 1px solid #d2705c;
+    color: #ffb900;
+    /* border: 1px solid #d2705c; */
+}
 @media screen and (max-width:992px) {
     .btn-discover{
         margin: 0;
@@ -57,6 +75,10 @@ body{box-sizing: content-box;}
         font-size: 12px;
     }
     .footer-btn{
+        padding: 8px 25px;
+        font-size:12px;
+    }
+    .btn-blue{
         padding: 8px 25px;
         font-size:12px;
     }
@@ -360,36 +382,36 @@ body{box-sizing: content-box;}
 /* Testimonial page Pic */
     .testimony-article{
         /* border: 2px solid #ffb900; */
-
-        height: auto;
+        height: 700px;
         width: 100%;
     }
         .testi-txt-holder{
-            /* border: 2px solid #d2705c; */
-            
+            /* border: 2px solid #d2705c;           */
             height: auto;
             width: 50%;
         }
             .title{
                 /* border: 2px solid #d2705c; */
                 color: #004569;
-                font-size: 3.6em;
-                line-height: .9;
-                padding-top: 20%;
+                font-size: 3.4em;
+                line-height: 1;
+                margin-top: 20%;
+                text-align: end;
             }
             .title-2{
                 /* border: 2px solid #d2705c; */
                 color:#fff;
-                font-size: 3.6em;
+                font-size: 3em;
                 line-height: .9;
                 padding-top: 25%;
             }
                 .sub-title{
+                    /* border: 2px solid #ffb900; */
                     color: #d2705c;
                     font-size: .9em;
                     text-align: end;
-                    padding-right: 10%;
-                    margin-top: -10;
+                    padding-right:10%;
+                    margin-top: -8;
                 }
                 .sub-title-2{
                     color:#fff;
@@ -400,9 +422,9 @@ body{box-sizing: content-box;}
                 .sub-title-3{
                     color:#d2705c;
                     font-size: .9em;
-                    text-align: start;
-                    margin-top: -10;
-                    margin-left: 40%;
+                    text-align: end;
+                    margin-top: -8;
+                    margin-right: 15%;
                 }
             .quot{
                 margin:1% 43% 3%;
@@ -412,7 +434,7 @@ body{box-sizing: content-box;}
                 /* border: 2px solid #d2705c; */
             }
             .article{
-                font-size: 1rem;
+                font-size: 1.1rem;
                 /* border: 2px solid #d2705c; */
             }
             .article-2{
@@ -425,24 +447,27 @@ body{box-sizing: content-box;}
 
             height: 50%;
             width: 50%;
-            padding-top: 10%;
+            padding-top: 5%;
+            z-index: -1;
         }
         .testi-img-holder-2{
             /* border: 2px solid yellow; */
 
-            height: 700px;
+            height: 600px;
             width: 50%;
-            padding-top: 5%;
+            padding: 0;
+            margin-top: 10%;
         }
         .testi-img-holder-3{
             /* border: 2px solid yellow; */
 
-            height: auto;
+            height: 50%;
             width: 50%;
-            padding-top: 10%;
-            object-fit: cover;
+            padding-top: 8%;
+            z-index: -1;
         }
-        @media all and (max-width:576px){
+
+        @media screen and (max-width:996px){
             .testimony-article{
                 /* border: 2px solid #ffb900; */
         
@@ -459,9 +484,9 @@ body{box-sizing: content-box;}
                     /* border: 2px solid #d2705c; */
                     color: #004569;
                     font-size: 3em;
-                    text-align: end;
+                    text-align: start;
                     line-height: .9;
-                    padding-top: 5%;
+                    margin-top: 5%;
                     color: #004569;
                 }
                 .title-2{
@@ -474,8 +499,8 @@ body{box-sizing: content-box;}
                     .sub-title{
                         color: #d2705c;
                         font-size: .8em;
-                        text-align: end;
-                        margin-top: -10;
+                        text-align: start;
+                        margin-top: -8;
                     }
                     .sub-title-2{
                         color:#fff;
@@ -483,19 +508,26 @@ body{box-sizing: content-box;}
                         text-align: start;
                         margin-top: -10;
                     }
+                    .sub-title-3{
+                        color:#d2705c;
+                        font-size: .9em;
+                        text-align: start;
+                        margin-top: -8;
+                        margin-left: 25%;
+                    }
                     .article{
-                        font-size: .9rem;
+                        font-size: 1rem;
                         /* border: 2px solid #d2705c; */
                     }
                     .article-2{
-                        font-size: .9rem;
+                        font-size: 1rem;
                         /* border: 2px solid #d2705c; */
                     }
                     .testi-img-holder{
                         /* border: 2px solid #004569; */
             
-                        height: 50%;
-                        width: 50%;
+                        height: 90%;
+                        width: 90%;
                         padding-top: 0;
                     }
                     .testi-img-holder-2{
@@ -504,12 +536,13 @@ body{box-sizing: content-box;}
                         height: 100%;
                         width: 100%;
                         padding-top: 0;
+                        margin-top: 0;
                     }
                     .testi-img-holder-3{
                         /* border: 2px solid #004569; */
             
-                        height: 50%;
-                        width: 50%;
+                        height: 70%;
+                        width: 70%;
                         padding-top: 0;
                     }
         }
@@ -519,21 +552,6 @@ footer{
     background-color: #f3f5f8;
     color: #004569;
 }
-    #btncontact-footer{
-        background-color: #004569;
-        color: #fff;
-        text-align: center;
-        padding: 8px 18px;
-        display: inline-block;
-        font-size: 12px;
-        border-radius: 20px;
-        transition: all 0.2s; 
-    }
-        #btncontact-footer:hover{
-            background-color:transparent;
-            border: 1px solid #004569;
-            color: #004569;
-        }
     #footer-txt-testimony{
         font-size: 3em;
         line-height: 1;
@@ -544,152 +562,165 @@ footer{
 
 
 /* give page */
-.txt-title{
-    font-size: 3.5em;
+/* Plain Banner */
+.plainBanner2{
+    padding:6% 0;
+    width: 100%;
+    min-height: 300px;
+    /* border: 2px solid red; */
 }
+/* .plain-holder2{
+    border: 2px solid #b74444;   
 
-#btncontact2{
-    background-color: #004569;
-    border: 1px solid #004569;
-    color: #fff;
-    text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
-    text-align: center;
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top:10px;
-    font-size: 14px;
-    border-radius: 25px;
-    transition: all 0.3s;
-}
-#btncontact2:hover{
-    background-color: #ffb900;
-    border: 1px solid #ffb900;
-}
+} */
+.plainBanner2 .plain-holder2 .leftside2{
+    line-height:1.2;
+    font-size: 4em;
+    font-weight: 300;
+    width: 50%;
 
-#banner2{
-    background-image: url(../assets/1.png);
+    /* border: 2px solid #ffb900;   */
+}
+.plainBanner2 .plain-holder2 .txt-body{
+    font-size: 1.4em;
+    width: 40%;
+
+    /* border: 2px solid #8000ff; */
+}
+@media screen and (max-width:992px) {
+    .plainBanner2{
+        padding-top:6%;
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        /* border: 2px solid red; */
+    }
+
+    .plainBanner2 .plain-holder2 .leftside2{
+        line-height:1.2;
+        font-size: 3em;
+        font-weight: 300;
+        width: 100%;
+
+        /* border: 2px solid #ffb900;   */
+    }
+    .plainBanner2 .plain-holder2 .txt-body{
+        font-size: 1.4em;
+        padding-top: 20px;
+        width: 100%;
+
+        /* border: 2px solid #8000ff; */
+    } 
+} 
+
+
+/* banner container */
+.bgBanner2{
+    background-image: url(/assets/1.webp);
     width: 100%;
     min-height: 500px;
     background-color: rgba(0,0, 0,.2);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 1rem;
-    background-origin: padding-box;
     background-attachment: fixed;
-    /* border: 2px solid #ffb900; */
 }
-#banner2 #cbanr2{
-    margin-top: 6%;
+.bgBanner3{
+    background-image: url(/assets/4blessed2.webp);
     width: 100%;
-
-    /* border: 5px solid red; */
-    }
-    #banner2 #txth{
-        width: 50%;
-        margin-bottom: 1.5%;
+    min-height: 300px;
+    background-color: rgba(0,0, 0,.2);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bgBanner2 .bgBanner-holder2{
+    padding:6% 0;
+    width: 100%;
+    /* border: 2px solid red; */
+}  
+.bgBanner3 .bgBanner-holder2{
+    padding:6% 0;
+    width: 100%;
+    /* border: 2px solid red; */
+}   
+    .bgBanner2 .header-left2{
+        width: 30%;
+        font-size: 4.5em;
+        line-height: 0.9;
 
         /* border:  2px solid #ffffff; */
     }
-    #banner2  #txtbody{
-            line-height:1.1;
-            font-size: 1.8em;
-            font-weight:400;
-        }
-    #banner2  #hdr4{
-        width: 50%;
-        /* border: 2px solid #d2705c; */
-    }
-    #banner2  #hdr4body{
-        letter-spacing:1px;
-        line-height:0.9;
-        font-size:3.5em;
-        /* border: 2px solid #d2705c; */
-    }
-    @media all and (max-width:576px){
-        #banner2 #txth{
-            width: 100%;
-            margin-bottom: 1.5%;
-            /* border:  2px solid #ffffff; */
-        }
-        #banner2  #txtbody{
-            line-height:1;
-            font-size: 1.3em;
-            font-weight:500;
-        }
-        #banner2  #hdr4{
-            width: 100%;
-            letter-spacing:1px;
-            line-height:0.9;
-            font-size:1.5em;
-            margin-bottom: 5%;
-            /* border: 2px solid #d2705c; */
-        }
-        #banner2  #hdr4body{
-            letter-spacing:1px;
-            line-height:1;
-            font-size:2.5em;
-            /* border: 2px solid #d2705c; */
-        }
-    }
+    .bgBanner3 .header-left3{
+        width: 40%;
+        font-size: 4em;
+        line-height: 0.9;
 
-    #banner2 #btncontact3{
-        background-color: #ffb900;
-        border: 1px solid #ffb900;
-        color: #fff;
-        text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
-        text-align: center;
-        padding: 10px 25px;
-        display: inline-block;
-        margin-top:10px;
-        font-size: 14px;
-        border-radius: 25px;
-        transition: all 0.3s;
+        /* border:  2px solid #ffffff; */
     }
-    #banner2 #btncontact3:hover{
-        background-color: #d2705c;
-        border: 1px solid #d2705c;
-    }
-    
-    /*give banners */
-    #concernbnr1 #h2{
-        line-height:1.2;
-        font-size: 2.5em;
-        font-weight: 300;
-        /* border: 2px solid #ffb900;   */
-    }
-    #concernbnr1 #bnrcnrcn1{
-        width: auto;
+    .bgBanner2 .body-right2{
+        width: 40%;
+        margin-left: auto;
+
         /* border: 2px solid #8000ff; */
     }
-    #concernbnr1 .text-gray{
-        font-size: 1.3em;
-        width: auto;
+        .bgBanner2 .body-text2{
+            line-height:1.2;
+            font-size: 2em;
+            font-weight:500;
+            width: 100%;
+        }  
+@media screen and (max-width:992px) {
+    .bgBanner2 .bgBanner-holder2{
+        padding:6% 0;
+        width: 100%;
+        /* border: 2px solid red; */
+    }   
+    .bgBanner3 .bgBanner-holder2{
+        padding:6% 0;
+        width: 100%;
         /* border: 2px solid red; */
     }
-    @media all and (max-width:576px){
-        #concernbnr1 #h2{
-            line-height:1.1;
-            font-size: 2em;
-            font-weight: 300;
-        }  
-        #concernbnr1 .text-gray{
-            font-size: 1em;
-        }
-    }
+        .bgBanner2 .header-left2{
+            width: 100%;
+            font-size: 3.5em;
+            line-height: 0.9;
 
-    .carousel-caption #quot{
+            /* border:  2px solid #ffffff; */
+        }
+        .bgBanner3 .header-left3{
+            width: 100%;
+            font-size: 3.5em;
+            line-height: 0.9;
+
+            /* border:  2px solid #ffffff; */
+        }
+        .bgBanner2 .body-right2{
+            width: 100%;
+            margin-left: auto;
+
+            /* border: 2px solid #8000ff; */
+        }
+
+            .bgBanner2 .body-text2{
+                line-height:1.1;
+                font-size: 1.5em;
+                width: 100%;
+            }   
+}
+
+    .carousel-caption .quot{
         /* border: 2px solid red; */
         margin-bottom: 5%;
         margin-top: 5%;
     }
-
-    #give-text{
+    .give-text{
     font-size: 2em;
     line-height: 1.1;
     }
-    @media all and (max-width:776px) {
-        #give-text{
+    @media screen and (max-width:996px) {
+        .give-text{
             font-size:1.5em;
         }
         .carousel-caption #quot{
@@ -697,97 +728,13 @@ footer{
             margin-bottom: 5%;
             margin-top: 5%;
         }
-        .txt-title{
-            font-size: 3em;
-        }
+
     }
-    @media all and (max-width:576px) {
-        #give-text{
-            font-size:1.2em;
-        }
-        .carousel-caption #quot{
-            /* border: 2px solid red; */
-            margin-bottom:0;
-            margin-top: 0;
-        }
-        .txt-title{
-            font-size: 2.5em;
-        }
-    }
+
+
+
 
 /* ministry */
-    /*banners */
-    .bnr{
-        width: 100%;
-        line-height:1.2;
-        /* font-size: 2.5em;
-        font-weight: 300; */
-        /* border: 2px solid #ffb900;   */
-    }
-    .bnr .txt-title1{
-        width: 50%;
-        font-size: 3.8em;
-        /* border: 2px solid #8000ff; */
-    }
-    .bnr .bnr-txt{
-        font-size: 1.3em;
-        width: 50%;
-        /* border: 2px solid red; */
-    }
-    @media all and (max-width:576px){
-        .bnr .txt-title1{
-            width: 100%;
-            font-size: 3em;
-            /* border: 2px solid #8000ff; */
-        } 
-        .bnr .bnr-txt{
-            font-size: 1.3em;
-            width: 100%;
-            /* border: 2px solid red; */
-        }
-    }
-
-    /* banner container */
-.banner{
-    background-image: url(../assets/4blessed2.png);
-    width: 100%;
-    min-height: 400px;
-    background-color: rgba(0,0, 0,.2);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1rem;
-    background-origin: padding-box;
-    background-attachment: fixed;
-    /* border: 2px solid #ffb900; */
-}
-.banner .cbanr{
-    margin-top: 5%;
-    width: auto;
-
-    /* border: 5px solid red; */
-    }
-
-    .banner .hdr3{
-        width: 50%;
-        letter-spacing:1px;
-        line-height:1;
-        font-size:4.1em;
-        margin-bottom: 5%;
-        /* border: 2px solid #d2705c; */
-    }
-    @media all and (max-width:576px){
-
-        .banner .hdr3{
-            width: 380px;
-            letter-spacing:1px;
-            line-height:0.9;
-            font-size:3.5em;
-            margin-bottom: 5%;
-            /* border: 2px solid #d2705c; */
-        }
-    }
-
 
     .bnr2{
         width: 100%;
@@ -813,7 +760,7 @@ footer{
         font-size: 1.2em;
         color: #004569;
     }
-    @media all and (max-width:576px){
+    @media screen and (max-width:996px){
         .bnr2 .txt-title2{
             width: 100%;
             font-size: 3.5em;
