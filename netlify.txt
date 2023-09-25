@@ -1,0 +1,4 @@
+dns3.p03.nsone.net = 198.51.44.67 or 10.20.23.1
+dns2.p03.nsone.net = 198.51.45.3
+dns4.p03.nsone.net = 198.51.45.67
+dns1.p03.nsone.net = 198.51.44.3
