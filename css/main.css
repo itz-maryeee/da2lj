@@ -78,7 +78,7 @@ body{box-sizing: content-box;}
 
 /* carousel */
 #slider-hero-item{
-    min-height: 800px;
+    min-height: 700px;
     background-color: darkgray;
     position: relative;
     background-size: cover;
@@ -109,7 +109,7 @@ body{box-sizing: content-box;}
 
 /* plainBanner */
 .plainBanner{
-    border: 2px solid #d2705c;
+    /* border: 2px solid #d2705c; */
     min-height: 350px;
     padding-inline: 4rem;
     padding-block: 5rem;
