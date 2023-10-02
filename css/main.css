@@ -33,6 +33,35 @@ body{box-sizing: content-box;}
         background-color: #ffb900;
         border: 1px solid #ffb900;
     }
+/* yellow */
+.btn-warning{
+    background-color: #ffb900;
+    border: 1px solid #ffb900;
+    color: #1e1e1e;
+    text-align: center;
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    transition: all ease-out .3s;
+}
+    .btn-warning:hover, .btn-warning:focus{
+        background-color: #004569;
+        border: 1px solid #ffb900;
+        color: #fff;
+    }
+/* blue */
+.btn-primary{
+    background-color: #004569;
+    border: 1px solid #004569;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    transition: all ease-out .3s;
+}
+    .btn-primary:hover, .btn-primary:focus{
+        background-color: #ffb900;
+        border: 1px solid #ffb900;
+    }
 
 /*Typography*/
 .nav-link{
@@ -43,31 +72,114 @@ body{box-sizing: content-box;}
     font-size: 14px;
     font-weight: 500;
 }
+.navbar-text-offcanvas{
+    font-size:15px;
+    font-family: 'garretBook';
+    font-weight: 200;
+}
 .title{
     font-size:40px;
     font-family: 'garretHeavy';
     font-weight: 500;
 }
-.header{
+.header-garretHeavy{
     font-size:34px;
     font-family: 'garretHeavy';
-    font-weight: 500;
+    font-weight: lighter;
 }
-.sub-title-25{
+.header-garretBook{
+    font-size:34px;
+    font-family: 'garretBook';
+    font-weight: 900;
+}
+.subtitle-25-garretHeavy{
     font-size:25px; 
     font-family: 'garretHeavy';
     font-weight: 500;
 }
-.sub-title-18{
+.subtitle-18-garretHeavy{
     font-size:16px; 
     font-family: 'garretHeavy';
     font-weight: 500;
 }
+.subtitle-25-garretBook{
+    font-size:25px; 
+    font-family: 'garretBook';
+    font-weight: 500;
+}
+.subtitle-18-garretBook{
+    font-size:16px; 
+    font-family: 'garretBook';
+    font-weight: 500;
+}
 .body-details-16{
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'garretBook';
     font-weight: 400;
 }
+.body-details-12{
+    font-size: 11px;
+    font-family: 'garretBook';
+    font-weight: 400;
+}
+
+    @media screen and(min-width:996px) {
+        .nav-link{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .btn-text{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .navbar-text-offcanvas{
+            font-size:15px;
+            font-family: 'garretBook';
+            font-weight: 200;
+        }
+        .title{
+            font-size:40px;
+            font-family: 'garretHeavy';
+            font-weight: 500;
+        }
+        .header-garretHeavy{
+            font-size:34px;
+            font-family: 'garretHeavy';
+            font-weight: lighter;
+        }
+        .header-garretBook{
+            font-size:34px;
+            font-family: 'garretBook';
+            font-weight: 900;
+        }
+        .subtitle-25-garretHeavy{
+            font-size:25px; 
+            font-family: 'garretHeavy';
+            font-weight: 500;
+        }
+        .subtitle-18-garretHeavy{
+            font-size:18px; 
+            font-family: 'garretHeavy';
+            font-weight: 500;
+        }
+        .subtitle-25-garretBook{
+            font-size:25px; 
+            font-family: 'garretBook';
+            font-weight: 500;
+        }
+
+        .body-details-16{
+            font-size: 16px;
+            font-family: 'garretBook';
+            font-weight: 400;
+        }
+        .body-details-12{
+            font-size: 12px;
+            font-family: 'garretBook';
+            font-weight: 400;
+        }
+        
+    }
 
 
 /* navbar */
@@ -127,12 +239,65 @@ body{box-sizing: content-box;}
     background-attachment: fixed;
 }
     .bgBanner-holder{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         padding-inline: 4rem;
         padding-block: 5rem;
         color: #fff;
     }
     .bgBanner-box{
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         width: 400px;
     }
+
+/* Tool Section */
+.tool-section{
+    /* border: 2px solid red; */
+    height: 700px;
+    padding-inline: 4rem;
+    padding-block: 3rem;
+    color: #1e1e1e;
+}
+
+    #tool-pic{
+        width: 500px;
+        height: 600px;
+        background-image:url(/assets/home.webp); 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size:cover; 
+        transition: transform .1s;
+        /* border: 2px solid #004569; */
+
+    }
+    #tool-pic:hover{
+        transform: scale(1.1); 
+    }
+        #tool-box{
+            width: 300px;
+            background-attachment: local scroll;
+        }
+        #imgTxt1{
+            color: #004569;
+            padding-bottom: 2px;
+        }
+        #tool-text-box{
+            /* border: 2px solid #004569; */
+            height: 400px;
+        }
+
+/* Footer */
+.footer-container{
+    height: 400px;
+    padding-inline: 4rem;
+    padding-block: 5rem;   
+}
+    .left{
+        width: 400px;
+    }
+    .center{
+        width: 500px;
+    }
+.copy{
+    padding-inline: 4rem;
+    padding-block: 1rem;
+}
