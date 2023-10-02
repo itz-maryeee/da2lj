@@ -18,7 +18,7 @@
 body{box-sizing: content-box;}
 #img-logo{width:55px;}
 
-/* buttons */
+/* ------------------ buttons */
 
 /* red */
 .btn-discover{
@@ -95,8 +95,42 @@ body{box-sizing: content-box;}
     }
 }
 
+/* --Typhography */
+.title{
+    font-size:45px; /*45px*/
+    font-family: 'garretHeavy';
+    font-weight: 500;
+}
+.header{
+    font-size:40px;
+    font-family: 'garretHeavy';
+    font-weight: 500;
+}
+.sub-title-25{
+    font-size:25px; 
+    font-family: 'garretHeavy';
+    font-weight: 500;
+}
+.sub-title-16{
+    font-size:16px; 
+    font-family: 'garretHeavy';
+    font-weight: 500;
+}
+.body-details{
+    font-size: 14px;
+    font-family: 'garretBook';
+    font-weight: 400;
+}
+
+
+
+
 /* navbar section ------------- */
 
+.navbar{
+    border: 2px solid red;
+    padding-inline: 3rem;
+}
 .nav-link {
     /* padding: 0.7em; */
     position: relative;
@@ -113,18 +147,23 @@ body{box-sizing: content-box;}
         left: 0;
     }
     .nav-link:hover::after {opacity: 1;}
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+    }
     .navbar-nav .nav-item a{
-        font-size: 12px; 
+        font-size: 13px; 
         color: #1e1e1e;
         text-transform: uppercase; 
         font-weight: 600;
     }
+
 .nav-item a.btn {
     background-color: transparent;
     border:1px solid #d2705c;
     color:#d2705c;
     text-align:center;
-    padding: 10px 25px;
+    padding: 10px 20px;
 
     /* top right bottom left */
     text-decoration:none;
@@ -140,18 +179,22 @@ body{box-sizing: content-box;}
     color:#fff;
 }
 .navbar-text{
-    font-size: 16px;
+    font-size: 14px;
     color: #1e1e1e;
     font-weight:500;
 }
-    @media all and (max-width: 992px){
+    @media all and (min-width: 1099px){
+        .navbar{
+            border: 2px solid red;
+            padding-inline: 1rem;
+        }
         .nav-link{
-            font-size: 14px;
+            font-size: 13px;
             color: #1e1e1e;
             font-weight: 600;
         }
         .navbar-text{
-            font-size: 12px;
+            font-size: 13px;
             color: #1e1e1e;
             font-weight:500;
         }
