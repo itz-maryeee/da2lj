@@ -83,37 +83,37 @@ body{box-sizing: content-box;}
     font-weight: 500;
 }
 .header-garretHeavy{
-    font-size:34px;
+    font-size:26px;
     font-family: 'garretHeavy';
     font-weight: lighter;
 }
 .header-garretBook{
-    font-size:34px;
+    font-size:26px;
     font-family: 'garretBook';
     font-weight: 900;
 }
 .subtitle-25-garretHeavy{
-    font-size:25px; 
+    font-size:20px; 
     font-family: 'garretHeavy';
     font-weight: 500;
 }
 .subtitle-18-garretHeavy{
-    font-size:16px; 
+    font-size:18px; 
     font-family: 'garretHeavy';
     font-weight: 500;
 }
 .subtitle-25-garretBook{
-    font-size:25px; 
+    font-size:20px; 
     font-family: 'garretBook';
     font-weight: 500;
 }
 .subtitle-18-garretBook{
-    font-size:16px; 
+    font-size:18px; 
     font-family: 'garretBook';
     font-weight: 500;
 }
-.body-details-16{
-    font-size: 13px;
+.body-details{
+    font-size: 15px;
     font-family: 'garretBook';
     font-weight: 400;
 }
@@ -123,10 +123,10 @@ body{box-sizing: content-box;}
     font-weight: 400;
 }
 
-    @media screen and(min-width:996px) {
+    @media screen and (min-width:798px){
         .nav-link{
             font-size: 15px;
-            font-weight: 500;
+            font-weight:500;
         }
         .btn-text{
             font-size: 14px;
@@ -158,7 +158,7 @@ body{box-sizing: content-box;}
             font-weight: 500;
         }
         .subtitle-18-garretHeavy{
-            font-size:18px; 
+            font-size:22px; 
             font-family: 'garretHeavy';
             font-weight: 500;
         }
@@ -167,11 +167,10 @@ body{box-sizing: content-box;}
             font-family: 'garretBook';
             font-weight: 500;
         }
-
-        .body-details-16{
-            font-size: 16px;
+        .body-details{
+            font-size: 18px;
             font-family: 'garretBook';
-            font-weight: 400;
+            font-weight: 500;
         }
         .body-details-12{
             font-size: 12px;
@@ -282,7 +281,7 @@ body{box-sizing: content-box;}
         }
         #tool-text-box{
             /* border: 2px solid #004569; */
-            height: 400px;
+            height: auto;
         }
 
 /* Footer */
