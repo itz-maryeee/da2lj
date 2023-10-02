@@ -26,7 +26,7 @@ body{box-sizing: content-box;}
     color: #fff;
     text-align: center;
     border-radius: 30px;
-    padding: .6rem 1rem;
+    padding: .5rem 1rem;
     transition: all ease-out .3s;
 }
     .btn-danger:hover, .btn-danger:focus{
@@ -87,7 +87,7 @@ body{box-sizing: content-box;}
 }
 #slider-hero-item .carousel-caption{
     position: absolute;
-    top: 13rem;
+    top: 11rem;
 }
     #btncontact{
         background-color: #d2705c;
@@ -114,3 +114,25 @@ body{box-sizing: content-box;}
     padding-inline: 4rem;
     padding-block: 5rem;
 }
+
+/* bg banner */
+ .bgBanner{
+    background-image: url(/assets/homepage.webp);
+    width: 100%;
+    min-height: 300px;
+    background-color: rgba(0,0, 0,.2);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    .bgBanner-holder{
+        border: 2px solid red;
+        padding-inline: 4rem;
+        padding-block: 5rem;
+        color: #fff;
+    }
+    .bgBanner-box{
+        border: 2px solid yellow;
+        width: 400px;
+    }
