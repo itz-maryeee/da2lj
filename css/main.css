@@ -96,6 +96,7 @@ body{box-sizing: content-box;}
             font-size:48;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
+            line-height: 1;
         }
         .header-Rmedium-36{
             font-size:36px;
@@ -146,6 +147,11 @@ body{box-sizing: content-box;}
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
+        .body-details-Pregular-14{
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
         .body-details-Plight{
             font-size: 16px;
             font-family: 'Poppins', sans-serif;
@@ -155,6 +161,9 @@ body{box-sizing: content-box;}
             font-size: 12px;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
+        }
+        .btn{
+            margin-top: 10px;
         }
         
     }
