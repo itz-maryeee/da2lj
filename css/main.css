@@ -1,7 +1,7 @@
-/* Garret Book */
+/* Lora */
 @font-face {
-    font-family: garretBook;
-    src: url(/assets/garet/Garet-Book.ttf);
+    font-family: loraReg;
+    src: url(/assets/Lora/static/Lora-Regular.ttf);
 }
 /* Garret Heavy */
 @font-face {
@@ -129,9 +129,7 @@ body{box-sizing: content-box;}
             font-size: 15px;
             font-weight:600;
         }
-        .nav-link:hover .nav-link:focus{
-            color: #d2705c;
-        }
+
         .btn-text{
             font-size: 14px;
             font-weight: 500;
@@ -143,12 +141,12 @@ body{box-sizing: content-box;}
             color: #004569;
         }
         .title{
-            font-size:40px;
-            font-family: 'garretHeavy';
+            font-size:2.5rem;
+            font-family: 'garretBook';
             font-weight: 500;
         }
         .header-garretHeavy{
-            font-size:34px;
+            font-size:2rem;
             font-family: 'garretHeavy';
             font-weight: lighter;
         }
@@ -249,13 +247,13 @@ body{box-sizing: content-box;}
     background-attachment: fixed;
 }
     .bgBanner-holder{
-        /* border: 2px solid red; */
+        border: 2px solid red;
         padding-inline: 4rem;
         padding-block: 5rem;
         color: #fff;
     }
     .bgBanner-box{
-        /* border: 2px solid yellow; */
+        border: 2px solid yellow;
         width: 400px;
     }
 
@@ -297,17 +295,52 @@ body{box-sizing: content-box;}
 
 /* Footer */
 .footer-container{
-    height: 400px;
-    padding-inline: 4rem;
-    padding-block: 5rem;   
+    /* border: 2px solid red; */
+    width: 100%;
+    padding-inline: 3rem;
+    padding-block:2rem;
 }
     .left{
-        width: 400px;
+        /* border: 2px solid red; */
+        height:100%;
+        width: 100%;
+        /* margin-left: 90px; */
     }
     .center{
-        width: 500px;
+        /* border: 2px solid red; */
+        height:100%;
+        width: 100%;
+        margin-top: 50px;
     }
+    
 .copy{
-    padding-inline: 4rem;
+    padding-inline: 3rem;
     padding-block: 1rem;
 }
+
+    @media screen and (min-width:996px) {
+        .footer-container{
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 400px;
+            padding-inline: 4rem;
+            padding-block:3.7rem;
+        }
+            .left{
+                /* border: 2px solid red; */
+                height:fit-content;
+                width: 400px;
+                /* margin-left: 90px; */
+            }
+            .center{
+                /* border: 2px solid red; */
+                height:fit-content;
+                width: 400px;
+                margin-top: 0;
+            }
+        .copy{
+            padding-inline: 4rem;
+            padding-block: 1rem;
+            height: 80px;
+        }
+    }
