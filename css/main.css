@@ -69,75 +69,17 @@ body{box-sizing: content-box;}
     }
 
 /*Typography*/
-.nav-link{
-    font-size: 13px;
-    font-weight: 600;
-}
-.btn-text{
-    font-size: 13px;
-    font-weight: 500;
-}
-.navbar-text-offcanvas{
-    font-size:15px;
-    font-family: 'Poppins';
-    font-weight: 200;
-    color: #004569;
-}
-.title{
-    font-size:40px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-.header-garretHeavy{
-    font-size:26px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-}
-.header-garretBook{
-    font-size:26px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-}
-.subtitle-25-garretHeavy{
-    font-size:20px; 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-.subtitle-18-garretHeavy{
-    font-size:18px; 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-.subtitle-25-garretBook{
-    font-size:20px; 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-.subtitle-18-garretBook{
-    font-size:18px; 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-.body-details{
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-.body-details-12{
-    font-size: 11px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
 
     @media screen and (min-width:1100px){
         .nav-link{
+            /* poppins semi-bold */
             font-size: 15px;
             font-weight:600;
         }
-
         .btn-text{
+            /* poppins medium */
             font-size: 14px;
-            font-weight: 500;
+            font-weight:500;
         }
         .navbar-text-offcanvas{
             font-size:20px;
@@ -145,40 +87,69 @@ body{box-sizing: content-box;}
             font-weight: 200;
             color: #004569;
         }
-        .title{
-            font-size:2.5rem;
+        .title-Rbold{
+            font-size:48px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        .header-Rmedium-48{
+            font-size:48;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
         }
-        .header-garretHeavy{
-            font-size:2rem;
+        .header-Rmedium-36{
+            font-size:36px;
             font-family: 'Roboto', sans-serif;
-            font-weight: lighter;
+            font-weight: 500;
+            line-height: 1.2;
         }
-        .header-garretBook{
-            font-size:34px;
+        .header-Rmedium-36{
+            font-size:36px;
             font-family: 'Roboto', sans-serif;
-            font-weight: 900;
+            font-weight: 500;
+            line-height: 1.2;
         }
-        .subtitle-25-garretHeavy{
-            font-size:25px; 
+        .header-Rmedium-24{
+            font-size:24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+        .subtitle-Pmedium-48{
+            font-size:48px; 
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
         }
-        .subtitle-18-garretHeavy{
-            font-size:22px; 
+        .subtitle-Pmedium-36{
+            font-size:36px; 
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
         }
-        .subtitle-25-garretBook{
-            font-size:25px; 
+        .subtitle-Pmedium-32{
+            font-size:32px; 
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+        }
+        .body-details-medium-21{
+            font-size: 21px;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
         }
-        .body-details{
-            font-size: 18px;
+        .body-details-Pregular-21{
+            font-size: 21px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 500;
+            font-weight: 400;
+        }
+        .body-details-Pregular-16{
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+        .body-details-Plight{
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
         }
         .body-details-12{
             font-size: 12px;
@@ -234,12 +205,12 @@ body{box-sizing: content-box;}
 
 /* plainBanner */
 .plainBanner{
-    border: 2px solid #d2705c;
+    /* border: 2px solid #d2705c; */
     min-height: 300px;
 
 }
-    .plainBanner-holder{
-        border: 2px solid yellow;
+    .plain-holder{
+        /* border: 2px solid yellow; */
 
         padding-inline: 4rem;
         padding-block: 5rem;
@@ -257,13 +228,13 @@ body{box-sizing: content-box;}
     background-attachment: fixed;
 }
     .bgBanner-holder{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         padding-inline: 4rem;
         padding-block: 5rem;
         color: #fff;
     }
     .bgBanner-box{
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         width: 400px;
     }
 
@@ -320,7 +291,7 @@ body{box-sizing: content-box;}
         /* border: 2px solid red; */
         height:100%;
         width: 100%;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     
 .copy{
@@ -346,11 +317,12 @@ body{box-sizing: content-box;}
                 /* border: 2px solid red; */
                 height:fit-content;
                 width: 400px;
-                margin-top: 0;
+                /* margin-top: 0; */
             }
         .copy{
-            padding-inline: 4rem;
-            padding-block: 1rem;
+            /* border: 2px solid blueviolet; */
             height: 80px;
-        }
+            padding-block: 1.3rem;
+
+        }    
     }
