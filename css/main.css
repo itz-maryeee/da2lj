@@ -65,17 +65,18 @@ body{box-sizing: content-box;}
 
 /*Typography*/
 .nav-link{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
 }
 .btn-text{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 .navbar-text-offcanvas{
     font-size:15px;
     font-family: 'garretBook';
     font-weight: 200;
+    color: #004569;
 }
 .title{
     font-size:40px;
@@ -113,7 +114,7 @@ body{box-sizing: content-box;}
     font-weight: 500;
 }
 .body-details{
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'garretBook';
     font-weight: 400;
 }
@@ -123,19 +124,23 @@ body{box-sizing: content-box;}
     font-weight: 400;
 }
 
-    @media screen and (min-width:798px){
+    @media screen and (min-width:1100px){
         .nav-link{
             font-size: 15px;
-            font-weight:500;
+            font-weight:600;
+        }
+        .nav-link:hover .nav-link:focus{
+            color: #d2705c;
         }
         .btn-text{
             font-size: 14px;
             font-weight: 500;
         }
         .navbar-text-offcanvas{
-            font-size:15px;
+            font-size:20px;
             font-family: 'garretBook';
             font-weight: 200;
+            color: #004569;
         }
         .title{
             font-size:40px;
@@ -183,9 +188,15 @@ body{box-sizing: content-box;}
 
 /* navbar */
 .navbar{
-    padding-inline: 3rem;
+    padding-inline: .5rem;
     text-transform: uppercase;
 }
+    @media screen and (min-width:1100px) {  
+        .navbar{
+            padding-inline: 3rem;
+            text-transform: uppercase;
+        } 
+    }
 
 /* carousel */
 #slider-hero-item{
