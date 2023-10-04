@@ -255,13 +255,13 @@ body{box-sizing: content-box;}
 
 /* Tool Section */
 .tool-section{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     height: 700px;
-    padding-inline: 4rem;
-    padding-block: 3rem;
     color: #1e1e1e;
 }
-
+    .tool-holder{
+        border: 2px solid salmon;
+    }
     #tool-pic{
         width: 500px;
         height: 600px;
@@ -296,6 +296,7 @@ body{box-sizing: content-box;}
     padding-inline: 3rem;
     padding-block:2rem;
 }
+
     .left{
         /* border: 2px solid red; */
         height:100%;
