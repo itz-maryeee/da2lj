@@ -68,9 +68,147 @@ body{box-sizing: content-box;}
         border: 1px solid #ffb900;
     }
 
-/*Typography*/
 
-    @media screen and (min-width:1100px){
+    @media screen and (min-width:996px) {
+        /* red */
+        .btn-danger{
+            background-color: #d2705c;
+            border: 1px solid #d2705c;
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: .5rem 1rem;
+            transition: all ease-out .3s;
+        }
+            .btn-danger:hover, .btn-danger:focus{
+                background-color: #ffb900;
+                border: 1px solid #ffb900;
+            }
+        /* yellow */
+        .btn-warning{
+            background-color: #ffb900;
+            border: 1px solid #ffb900;
+            color: #1e1e1e;
+            text-align: center;
+            border-radius: 30px;
+            padding: .5rem 1rem;
+            transition: all ease-out .3s;
+        }
+            .btn-warning:hover, .btn-warning:focus{
+                background-color: #004569;
+                border: 1px solid #ffb900;
+                color: #fff;
+            }
+        /* blue */
+        .btn-primary{
+            background-color: #004569;
+            border: 1px solid #004569;
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: .5rem 1rem;
+            transition: all ease-out .3s;
+        }
+            .btn-primary:hover, .btn-primary:focus{
+                background-color: #ffb900;
+                border: 1px solid #ffb900;
+            }
+
+    }
+
+
+
+
+/*Typography*/
+.nav-link{
+    /* poppins semi-bold */
+    font-size: 14px;
+    font-weight:600;
+}
+.btn-text{
+    /* poppins medium */
+    font-size: 14px;
+    font-weight:500;
+}
+.navbar-text-offcanvas{
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #004569;
+}
+.header-Rmedium-60{
+    font-size:30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}
+.header-Rmedium-48{
+    font-size:24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}
+.header-Rmedium-38{
+    font-size:28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.header-Rmedium-36{
+    font-size:24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.header-Rmedium-24{
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.subtitle-Pmedium-36{
+    font-size:18px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.subtitle-Pmedium-32{
+    font-size:16px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}   
+.body-details-Pregular-24{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.body-details-Pregular-16{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.body-details-Pregular-14{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.body-details-Plight{
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.body-details-12{
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.btn{
+    margin-top: 10px;
+}
+.align{
+    text-align: center;
+}
+    @media screen and (min-width:996px){
         .nav-link{
             /* poppins semi-bold */
             font-size: 15px;
@@ -86,11 +224,6 @@ body{box-sizing: content-box;}
             font-family: 'Roboto', sans-serif;
             font-weight: 200;
             color: #004569;
-        }
-        .title-Rbold{
-            font-size:48px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
         }
         .header-Rmedium-60{
             font-size:60px;
@@ -122,11 +255,6 @@ body{box-sizing: content-box;}
             font-weight: 500;
             line-height: 1.2;
         }
-        .subtitle-Pmedium-48{
-            font-size:48px; 
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-        }
         .subtitle-Pmedium-36{
             font-size:36px; 
             font-family: 'Poppins', sans-serif;
@@ -137,12 +265,7 @@ body{box-sizing: content-box;}
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             line-height: 1;
-        }
-        .body-details-medium-21{
-            font-size: 21px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-        }
+        }   
         .body-details-Pregular-24{
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
@@ -171,16 +294,18 @@ body{box-sizing: content-box;}
         .btn{
             margin-top: 10px;
         }
-        
+        .align{
+            text-align: start;
+        }
     }
 
 
 /* navbar */
 .navbar{
-    padding-inline: .5rem;
+    padding-inline: 1rem;
     text-transform: uppercase;
 }
-    @media screen and (min-width:1100px) {  
+    @media screen and (min-width:996px) {  
         .navbar{
             padding-inline: 3rem;
             text-transform: uppercase;
@@ -221,21 +346,33 @@ body{box-sizing: content-box;}
 /* plainBanner */
 .plainBanner{
     /* border: 2px solid #d2705c; */
-    min-height: 300px;
+    min-height: 200px;
 
 }
     .plain-holder{
         /* border: 2px solid yellow; */
 
-        padding-inline: 4rem;
-        padding-block: 5rem;
+        padding-inline: 3rem;
+        padding-block: 3rem;
+    }
+    @media screen and (min-width:996px) {
+        .plainBanner{
+            /* border: 2px solid #d2705c; */
+            min-height: 300px;  
+        }
+            .plain-holder{
+                /* border: 2px solid yellow; */
+        
+                padding-inline: 4rem;
+                padding-block: 5rem;
+            }
     }
 
-/* bg banner */
- .bgBanner{
+    /* bg banner */
+.bgBanner{
     background-image: url(/assets/homepage.webp);
     width: 100%;
-    min-height: 300px;
+    min-height: 200px ;
     background-color: rgba(0,0, 0,.2);
     background-position: center;
     background-size: cover;
@@ -244,27 +381,49 @@ body{box-sizing: content-box;}
 }
     .bgBanner-holder{
         /* border: 2px solid red; */
-        padding-inline: 4rem;
-        padding-block: 5rem;
+        padding-inline: 3rem;
+        padding-block: 3rem;
         color: #fff;
     }
     .bgBanner-box{
         /* border: 2px solid yellow; */
-        width: 400px;
+        width: 100%;
+    }
+
+    @media screen and (min-width:996px) {
+        .bgBanner{
+            background-image: url(/assets/homepage.webp);
+            width: 100%;
+            min-height: 300px;
+            background-color: rgba(0,0, 0,.2);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+            .bgBanner-holder{
+                /* border: 2px solid red; */
+                padding-inline: 4rem;
+                padding-block: 5rem;
+                color: #fff;
+            }
+            .bgBanner-box{
+                /* border: 2px solid yellow; */
+                width: 400px;
+            }    
     }
 
 /* Tool Section */
 .tool-section{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    padding-inline: 1rem;
+    padding-block: 2rem;
     height: 700px;
     color: #1e1e1e;
 }
-    .tool-holder{
-        border: 2px solid salmon;
-    }
     #tool-pic{
         width: 500px;
-        height: 600px;
+        height: 50%;
         background-image:url(/assets/home.webp); 
         background-position: center;
         background-repeat: no-repeat; 
@@ -276,44 +435,72 @@ body{box-sizing: content-box;}
     #tool-pic:hover{
         transform: scale(1.1); 
     }
-        #tool-box{
-            width: 300px;
-            background-attachment: local scroll;
+        #tool-text-box{
+         /* border: 2px solid red; */
+         width: 100%;
+         background-attachment: local scroll;
         }
         #imgTxt1{
             color: #004569;
             padding-bottom: 2px;
         }
-        #tool-text-box{
-            /* border: 2px solid #004569; */
-            height: auto;
+    @media screen and (min-width:996px) {
+        .tool-section{
+            /* border: 2px solid red; */
+            height: 700px;
+            color: #1e1e1e;
         }
+
+            #tool-pic{
+                width: 500px;
+                height: 600px;
+                background-image:url(/assets/home.webp); 
+                background-position: center;
+                background-repeat: no-repeat; 
+                background-size:cover; 
+                transition: transform .1s;
+                /* border: 2px solid #004569; */
+        
+            }
+            #tool-pic:hover{
+                transform: scale(1.1); 
+            }
+                #tool-text-box{
+                    width: 480px;
+                    background-attachment: local scroll;
+                }
+                #imgTxt1{
+                    color: #004569;
+                    padding-bottom: 2px;
+                }
+    }
 
 /* Footer */
 .footer-container{
     /* border: 2px solid red; */
     width: 100%;
-    padding-inline: 3rem;
-    padding-block:2rem;
+    height: 550px;
+    padding-inline: 2rem;
+    padding-block:3.7rem;
 }
-
     .left{
         /* border: 2px solid red; */
-        height:100%;
-        width: 100%;
+        height:fit-content;
+        width: 400px;
         /* margin-left: 90px; */
     }
     .center{
         /* border: 2px solid red; */
-        height:100%;
-        width: 100%;
-        /* margin-top: 50px; */
+        height:fit-content;
+        width: 400px;
+        /* margin-top: 0; */
     }
-    
 .copy{
-    padding-inline: 3rem;
-    padding-block: 1rem;
-}
+    /* border: 2px solid blueviolet; */
+    height: 60px;
+    padding-block: .8rem;
+
+}  
 
     @media screen and (min-width:996px) {
         .footer-container{
