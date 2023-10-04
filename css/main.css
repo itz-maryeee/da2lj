@@ -550,9 +550,9 @@ body{box-sizing: content-box;}
 
     /* bg banner */
 .bgBanner{
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
-    url(/assets/homepage.webp);
+    background-image:url(/assets/homepage.webp);
+    /* linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */
+
     width: 100%;
     min-height: 200px ;
     background-color: rgba(0,0, 0,.2);
@@ -598,7 +598,7 @@ body{box-sizing: content-box;}
     @media screen and (min-width:996px) {
         .bgBanner{
             background-image: 
-            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+            /* linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */
             url(/assets/homepage.webp);            
             width: 100%;
             min-height: 400px;
@@ -824,21 +824,27 @@ body{box-sizing: content-box;}
         }
         .card-intro{
             width: 100%;
-            height: 68px;
+            height: 110px;
             color: #fff;
             box-sizing: border-box;
             position: absolute;
             bottom: 0;
-            padding-inline: 1rem;
-            padding-block: 1rem;
             background: rgb(0, 69, 105,.5);
         }
             .testi-name{
                 color: #fff;
                 text-shadow: 1px 1px 2px #1e1e1e;
+                padding-inline: 1rem;
+                padding-block: 1rem;
             }
             .testi-location{
-                color: #ffb900;
+                color: #efba27;
+                padding-inline: 2rem;
+                padding-block: 1rem;
+            }
+            .testi-details{
+                padding-inline: 1rem;
+                padding-block: 1rem;
             }
         .card-box:hover .testimony-img{
             transform: scale(1.1);
@@ -853,4 +859,7 @@ body{box-sizing: content-box;}
                 padding-inline: .8rem;
                 padding-block: 1rem;
                 background: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30,1) 0%, rgb(30, 30, 30,.5) 99.4%);        }
-}
+        }
+        .card-box:hover .testi-location{
+            color: #ffb900;
+        }
