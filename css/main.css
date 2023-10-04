@@ -92,14 +92,20 @@ body{box-sizing: content-box;}
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
         }
-        .header-Rmedium-48{
-            font-size:48;
+        .header-Rmedium-60{
+            font-size:60px;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             line-height: 1;
         }
-        .header-Rmedium-36{
-            font-size:36px;
+        .header-Rmedium-48{
+            font-size:48px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+        }
+        .header-Rmedium-38{
+            font-size:38px;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             line-height: 1.2;
@@ -137,8 +143,8 @@ body{box-sizing: content-box;}
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
         }
-        .body-details-Pregular-21{
-            font-size: 21px;
+        .body-details-Pregular-24{
+            font-size: 24px;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
@@ -329,9 +335,9 @@ body{box-sizing: content-box;}
                 /* margin-top: 0; */
             }
         .copy{
-            /* border: 2px solid blueviolet; */
-            height: 80px;
-            padding-block: 1.3rem;
+            border: 2px solid blueviolet;
+            height: 60px;
+            padding-block: .8rem;
 
         }    
     }
