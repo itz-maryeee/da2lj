@@ -24,6 +24,7 @@
 body{box-sizing: content-box;}
 #img-logo{width:55px;}
 
+/* buttons */
 /* red */
 .btn-danger{
     background-color: #d2705c;
@@ -31,7 +32,7 @@ body{box-sizing: content-box;}
     color: #fff;
     text-align: center;
     border-radius: 30px;
-    padding: .5rem 1rem;
+    padding: .5rem .7rem;
     transition: all ease-out .3s;
 }
     .btn-danger:hover, .btn-danger:focus{
@@ -67,7 +68,6 @@ body{box-sizing: content-box;}
         background-color: #ffb900;
         border: 1px solid #ffb900;
     }
-
 
     @media screen and (min-width:996px) {
         /* red */
@@ -119,6 +119,7 @@ body{box-sizing: content-box;}
 
 
 
+
 /*Typography*/
 .nav-link{
     /* poppins semi-bold */
@@ -127,7 +128,7 @@ body{box-sizing: content-box;}
 }
 .btn-text{
     /* poppins medium */
-    font-size: 14px;
+    font-size: 12px;
     font-weight:500;
 }
 .navbar-text-offcanvas{
@@ -137,7 +138,7 @@ body{box-sizing: content-box;}
     color: #004569;
 }
 .header-Rmedium-60{
-    font-size:30px;
+    font-size:22px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1;
@@ -208,6 +209,96 @@ body{box-sizing: content-box;}
 .align{
     text-align: center;
 }
+    @media screen and (min-width:696px) {
+        .nav-link{
+            /* poppins semi-bold */
+            font-size: 14px;
+            font-weight:600;
+        }
+        .btn-text{
+            /* poppins medium */
+            font-size: 12px;
+            font-weight:500;
+        }
+        .navbar-text-offcanvas{
+            font-size:14px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 200;
+            color: #004569;
+        }
+        .header-Rmedium-60{
+            font-size:28px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+        }
+        .header-Rmedium-48{
+            font-size:24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+        }
+        .header-Rmedium-38{
+            font-size:28px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+        .header-Rmedium-36{
+            font-size:24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+        .header-Rmedium-24{
+            font-size:20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+        .subtitle-Pmedium-36{
+            font-size:18px; 
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+        .subtitle-Pmedium-32{
+            font-size:16px; 
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            line-height: 1;
+        }   
+        .body-details-Pregular-24{
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+        .body-details-Pregular-16{
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+        .body-details-Pregular-14{
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+        .body-details-Plight{
+            font-size: 11px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+        .body-details-12{
+            font-size: 11px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+        .btn{
+            margin-top: 10px;
+        }
+        .align{
+            text-align: center;
+        }  
+    }
     @media screen and (min-width:996px){
         .nav-link{
             /* poppins semi-bold */
@@ -314,16 +405,19 @@ body{box-sizing: content-box;}
 
 /* carousel */
 #slider-hero-item{
-    min-height: 700px;
+    min-height: 500px;
     background-color: darkgray;
     position: relative;
     background-size: cover;
     background-origin: padding-box;
     background-attachment: fixed;
+    padding: 0;
 }
 #slider-hero-item .carousel-caption{
+    /* border: 2px solid red; */
+
     position: absolute;
-    top: 11rem;
+    top: 8rem;
 }
     #btncontact{
         background-color: #d2705c;
@@ -331,16 +425,49 @@ body{box-sizing: content-box;}
         color: #fff;
         text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
         text-align: center;
-        padding: 14px 48px;
+        padding: 10px 38px;
         display: inline-block;
-        margin-top:20px;
-        font-size: 18px;
+        margin-top:15px;
+        font-size: 14px;
         border-radius: 30px;
         transition: all 0.3s;
     }
     #btncontact:hover, #btncontact:focus{
         background-color: #ffb900;
         border: 1px solid #ffb900;
+    }
+    @media screen and (min-width:996px) {
+        #slider-hero-item{
+            min-height: 700px;
+            background-color: darkgray;
+            position: relative;
+            background-size: cover;
+            background-origin: padding-box;
+            background-attachment: fixed;
+        }
+        #slider-hero-item .carousel-caption{
+            position: absolute;
+            align-content: center;
+            top: 11rem;
+        }
+            #btncontact{
+                background-color: #d2705c;
+                border: 1px solid #d2705c;
+                color: #fff;
+                text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
+                text-align: center;
+                padding: 14px 48px;
+                display: inline-block;
+                margin-top:20px;
+                font-size: 18px;
+                border-radius: 30px;
+                transition: all 0.3s;
+            }
+            #btncontact:hover, #btncontact:focus{
+                background-color: #ffb900;
+                border: 1px solid #ffb900;
+            }  
+        
     }
 
 /* plainBanner */
