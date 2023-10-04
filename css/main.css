@@ -32,7 +32,7 @@ body{box-sizing: content-box;}
     color: #fff;
     text-align: center;
     border-radius: 30px;
-    padding: .5rem .7rem;
+    padding: 10px 38px;
     transition: all ease-out .3s;
 }
     .btn-danger:hover, .btn-danger:focus{
@@ -46,7 +46,7 @@ body{box-sizing: content-box;}
     color: #1e1e1e;
     text-align: center;
     border-radius: 30px;
-    padding: .5rem 1rem;
+    padding: 10px 38px;
     transition: all ease-out .3s;
 }
     .btn-warning:hover, .btn-warning:focus{
@@ -61,7 +61,7 @@ body{box-sizing: content-box;}
     color: #fff;
     text-align: center;
     border-radius: 30px;
-    padding: .5rem 1rem;
+    padding: 10px 38px;
     transition: all ease-out .3s;
 }
     .btn-primary:hover, .btn-primary:focus{
@@ -77,7 +77,7 @@ body{box-sizing: content-box;}
             color: #fff;
             text-align: center;
             border-radius: 30px;
-            padding: 1rem 2rem;
+            padding: 12px 44px;
             transition: all ease-out .3s;
         }
             .btn-danger:hover, .btn-danger:focus{
@@ -91,7 +91,7 @@ body{box-sizing: content-box;}
             color: #1e1e1e;
             text-align: center;
             border-radius: 30px;
-            padding: 1rem 2rem;
+            padding: 12px 44px;
             transition: all ease-out .3s;
         }
             .btn-warning:hover, .btn-warning:focus{
@@ -106,7 +106,7 @@ body{box-sizing: content-box;}
             color: #fff;
             text-align: center;
             border-radius: 30px;
-            padding: 1rem 2rem;
+            padding: 12px 44px;
             transition: all ease-out .3s;
         }
             .btn-primary:hover, .btn-primary:focus{
@@ -322,6 +322,12 @@ body{box-sizing: content-box;}
             font-weight: 500;
             line-height: 1;
         }
+        .header-Rmedium-48-nolh{
+            font-size:48px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            line-height: 1.2;
+        }
         .header-Rmedium-48{
             font-size:48px;
             font-family: 'Roboto', sans-serif;
@@ -481,7 +487,7 @@ body{box-sizing: content-box;}
         #slider-hero-item .carousel-caption{
             position: absolute;
             align-content: center;
-            top: 11rem;
+            top: 10rem;
         }
         #slider-hero-item-give{
             min-height: 700px;
@@ -503,7 +509,7 @@ body{box-sizing: content-box;}
                 color: #fff;
                 text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
                 text-align: center;
-                padding: 14px 48px;
+                padding: 12px 44px;
                 display: inline-block;
                 margin-top:20px;
                 font-size: 18px;
@@ -566,6 +572,29 @@ body{box-sizing: content-box;}
         width: 100%;
     }
 
+    .bgBanner-give{
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+        url(/assets/homepage.webp);
+        width: 100%;
+        min-height: 200px ;
+        background-color: rgba(0,0, 0,.2);
+        background-position:top right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+        .bgBanner-holder-give{
+            /* border: 2px solid red; */
+            padding-inline: 3rem;
+            padding-block: 3rem;
+            color: #fff;
+        }
+        .bgBanner-box-give{
+            /* border: 2px solid yellow; */
+            width: 100%;
+        }
+
     @media screen and (min-width:996px) {
         .bgBanner{
             background-image: 
@@ -588,7 +617,53 @@ body{box-sizing: content-box;}
             .bgBanner-box{
                 /* border: 2px solid yellow; */
                 width: 400px;
-            }    
+            }   
+
+            .bgBanner-give{
+                background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+                url(/assets/2.webp);            
+                width: 100%;
+                min-height: 400px;
+                background-color: rgba(0,0, 0,.2);
+                background-position: top center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+                .bgBanner-holder-give{
+                    /* border: 2px solid red; */
+                    padding-inline: 4rem;
+                    padding-block: 5rem;
+                    color: #fff;
+                }
+                .bgBanner-box-give{
+                    /* border: 2px solid yellow; */
+                    width: 400px;
+                }  
+            
+                .bgBanner-ministry{
+                    background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+                    url(/assets/blessMinistry.webp);            
+                    width: 100%;
+                    min-height: 400px;
+                    background-color: rgba(0,0, 0,.2);
+                    background-position: top center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                }
+                    .bgBanner-holder-ministry{
+                        /* border: 2px solid red; */
+                        padding-inline: 4rem;
+                        padding-block: 5rem;
+                        color: #fff;
+                    }
+                    .bgBanner-box-ministry{
+                        /* border: 2px solid yellow; */
+                        width: 400px;
+                    }    
     }
 /* Tool Section */
 .tool-section{
@@ -714,7 +789,68 @@ body{box-sizing: content-box;}
         width: 100%;
         height: 400px;
         padding-inline: 4rem;
-        padding-block:3.7rem;
+        padding-block:5rem;
     }
 }
 
+@media screen and (min-width:996px) {
+    .testimony-section{
+        /* border: 2px solid red; */
+        background:whitesmoke;
+    }
+    .testimony-holder{
+        /* border: 2px solid salmon; */
+
+        padding-inline: 4rem;
+        padding-block: 5rem;
+    }
+    .card-box{
+        /* border: 2px solid blue; */
+
+        width: 320px;
+        height: 400px;
+        box-shadow: 2px 2px 5px #1e1e1e;
+        overflow: hidden;
+        position: relative;
+        transition: all ease-out .3s;
+    }
+        .testimony-img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            object-position: center;
+            transition: transform .1s;
+        }
+        .card-intro{
+            width: 100%;
+            height: 68px;
+            color: #fff;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            padding-inline: 1rem;
+            padding-block: 1rem;
+            background: rgb(0, 69, 105,.5);
+        }
+            .testi-name{
+                color: #fff;
+                text-shadow: 1px 1px 2px #1e1e1e;
+            }
+            .testi-location{
+                color: #ffb900;
+            }
+        .card-box:hover .testimony-img{
+            transform: scale(1.1);
+        }
+        .card-box:hover .card-intro{
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                box-sizing: border-box;
+                position: absolute;
+                bottom: 0;
+                padding-inline: .8rem;
+                padding-block: 1rem;
+                background: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30,1) 0%, rgb(30, 30, 30,.5) 99.4%);        }
+}
