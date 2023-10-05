@@ -859,7 +859,7 @@ body{box-sizing: content-box;}
                 position: absolute;
                 margin-top: .8rem;
                 margin-left: 31.6rem;
-                margin-right: auto;
+                margin-right: 31.6rem;
             }
         
             /* hover effects */
