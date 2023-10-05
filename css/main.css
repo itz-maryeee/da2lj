@@ -801,11 +801,11 @@ body{box-sizing: content-box;}
         /* border: 2px solid salmon; */
 
         padding-inline: 4rem;
-        padding-block: 5rem;
+        padding-block-start: 2rem;
+        padding-block-end: 5rem;
     }
     .card-box{
         /* border: 2px solid blue; */
-
         width: 320px;
         height: 400px;
         box-shadow: 2px 2px 5px #1e1e1e;
@@ -845,6 +845,24 @@ body{box-sizing: content-box;}
                 padding-inline: 1rem;
                 padding-block: 1rem;
             }
+            .testi-title{
+                /* border: 2px solid red; */
+                color: #d2705c;
+                padding-block-end: 2rem;
+                padding-block-start: 6rem;
+                position: relative;
+            }   
+            .hr{
+                width: 100px;
+                height: 5px;
+                background: #ffb900;
+                position: absolute;
+                margin-top: .8rem;
+                margin-left: 31.6rem;
+                margin-right: auto;
+            }
+        
+            /* hover effects */
         .card-box:hover .testimony-img{
             transform: scale(1.1);
         }
