@@ -856,10 +856,8 @@ body{box-sizing: content-box;}
                 width: 100px;
                 height: 5px;
                 background: #ffb900;
-                position: absolute;
-                margin-top: .8rem;
-                margin-left: 38rem;
-                margin-right: 38rem;
+                /* position: absolute; */
+                margin: 1.5rem auto 0;
             }
         
             /* hover effects */
