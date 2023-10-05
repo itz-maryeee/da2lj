@@ -782,7 +782,6 @@ body{box-sizing: content-box;}
     }
 
 /* Testimonies */
-
 @media screen and (min-width:996px) {
     .footer-testimony-container{
         /* border: 2px solid red; */
@@ -840,7 +839,7 @@ body{box-sizing: content-box;}
             .testi-location{
                 color: #efba27;
                 padding-inline: 2rem;
-                padding-block: 1rem;
+                /* padding-block: 1rem; */
             }
             .testi-details{
                 padding-inline: 1rem;
