@@ -839,7 +839,7 @@ body{box-sizing: content-box;}
             .testi-location{
                 color: #efba27;
                 padding-inline: 2rem;
-                /* padding-block: 1rem; */
+                padding-block-end: 1rem;
             }
             .testi-details{
                 padding-inline: 1rem;
