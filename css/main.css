@@ -117,9 +117,6 @@ body{box-sizing: content-box;}
     }
 
 
-
-
-
 /*Typography*/
 .nav-link{
     /* poppins semi-bold */
@@ -137,8 +134,10 @@ body{box-sizing: content-box;}
     font-weight: 200;
     color: #004569;
 }
+
+
 .header-Rmedium-60{
-    font-size:22px;
+    font-size:3.75rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1;
@@ -209,96 +208,7 @@ body{box-sizing: content-box;}
 .align{
     text-align: center;
 }
-    @media screen and (min-width:696px) {
-        .nav-link{
-            /* poppins semi-bold */
-            font-size: 14px;
-            font-weight:600;
-        }
-        .btn-text{
-            /* poppins medium */
-            font-size: 12px;
-            font-weight:500;
-        }
-        .navbar-text-offcanvas{
-            font-size:14px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 200;
-            color: #004569;
-        }
-        .header-Rmedium-60{
-            font-size:28px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            line-height: 1;
-        }
-        .header-Rmedium-48{
-            font-size:24px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            line-height: 1;
-        }
-        .header-Rmedium-38{
-            font-size:28px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            line-height: 1.2;
-        }
-        .header-Rmedium-36{
-            font-size:24px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            line-height: 1.2;
-        }
-        .header-Rmedium-24{
-            font-size:20px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            line-height: 1.2;
-        }
-        .subtitle-Pmedium-36{
-            font-size:18px; 
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-        }
-        .subtitle-Pmedium-32{
-            font-size:16px; 
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            line-height: 1;
-        }   
-        .body-details-Pregular-24{
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-        }
-        .body-details-Pregular-16{
-            font-size: 12px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-        }
-        .body-details-Pregular-14{
-            font-size: 12px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-        }
-        .body-details-Plight{
-            font-size: 11px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-        }
-        .body-details-12{
-            font-size: 11px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-        }
-        .btn{
-            margin-top: 8px;
-        }
-        .align{
-            text-align: center;
-        }  
-    }
+
     @media screen and (min-width:996px){
         .nav-link{
             /* poppins semi-bold */
@@ -316,75 +226,65 @@ body{box-sizing: content-box;}
             font-weight: 200;
             color: #004569;
         }
+
         .header-Rmedium-60{
-            font-size:60px;
+            font-size:3.75rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             line-height: 1;
         }
         .header-Rmedium-48-nolh{
-            font-size:48px;
+            font-size:3rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             line-height: 1.2;
         }
-        .header-Rmedium-48{
-            font-size:48px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            line-height: 1;
-        }
         .header-Rmedium-38{
-            font-size:38px;
+            font-size:2.375rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             line-height: 1.2;
         }
         .header-Rmedium-36{
-            font-size:36px;
+            font-size:2.25rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             line-height: 1.2;
         }
         .header-Rmedium-24{
-            font-size:24px;
+            font-size:1.5rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             line-height: 1.2;
         }
-        .subtitle-Pmedium-36{
-            font-size:36px; 
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-        }
         .subtitle-Pmedium-32{
-            font-size:32px; 
+            font-size:2rem; 
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             line-height: 1;
         }   
         .body-details-Pregular-24{
-            font-size: 24px;
+            font-size: 1.5rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
         .body-details-Pregular-16{
-            font-size: 16px;
+            font-size: 1rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
         .body-details-Pregular-14{
-            font-size: 15px;
+            font-size: 0.875rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
         .body-details-Plight{
-            font-size: 16px;
+            font-size: 1rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 300;
         }
         .body-details-12{
-            font-size: 12px;
+            font-size: 0.75rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
@@ -882,9 +782,3 @@ body{box-sizing: content-box;}
             color: #ffb900;
         }
 
-        /* .soc{
-            border: 2px solid blue;
-        }
-        .soc-med{
-            border: 2px solid red;
-        } */
