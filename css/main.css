@@ -1,75 +1,24 @@
-/* Lora
-@font-face {
-    font-family: loraReg;
-    src: url(/assets/Lora/static/Lora-Regular.ttf);
-}
-/* Garret Heavy
-@font-face {
-    font-family: garretHeavy;
-    src: url(/assets/garet/Garet-Heavy.ttf);
-} */
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,600;1,800&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap'); */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
-
 
 *, ::after, ::before{
     margin:0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 body{box-sizing: content-box;}
 #img-logo{width:55px;}
+img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+@media screen and (min-width:60em) {
+    img{
+        height: 3.54rem;
+        width: 3.54rem;
+    }
+}
 
 /* buttons */
-/* red */
-.btn-danger{
-    background-color: #d2705c;
-    border: 1px solid #d2705c;
-    color: #fff;
-    text-align: center;
-    border-radius: 30px;
-    padding: 10px 38px;
-    transition: all ease-out .3s;
-}
-    .btn-danger:hover, .btn-danger:focus{
-        background-color: #ffb900;
-        border: 1px solid #ffb900;
-    }
-/* yellow */
-.btn-warning{
-    background-color: #ffb900;
-    border: 1px solid #ffb900;
-    color: #1e1e1e;
-    text-align: center;
-    border-radius: 30px;
-    padding: 10px 38px;
-    transition: all ease-out .3s;
-}
-    .btn-warning:hover, .btn-warning:focus{
-        background-color: #004569;
-        border: 1px solid #ffb900;
-        color: #fff;
-    }
-/* blue */
-.btn-primary{
-    background-color: #004569;
-    border: 1px solid #004569;
-    color: #fff;
-    text-align: center;
-    border-radius: 30px;
-    padding: 10px 38px;
-    transition: all ease-out .3s;
-}
-    .btn-primary:hover, .btn-primary:focus{
-        background-color: #ffb900;
-        border: 1px solid #ffb900;
-    }
-
-    @media screen and (min-width:996px) {
         /* red */
         .btn-danger{
             background-color: #d2705c;
@@ -77,7 +26,51 @@ body{box-sizing: content-box;}
             color: #fff;
             text-align: center;
             border-radius: 30px;
-            padding: 12px 44px;
+            padding: 10px 20px;
+            transition: all ease-out .3s;
+        }
+            .btn-danger:hover, .btn-danger:focus{
+                background-color: #ffb900;
+                border: 1px solid #ffb900;
+            }
+        /* yellow */
+        .btn-warning{
+            background-color: #ffb900;
+            border: 1px solid #ffb900;
+            color: #1e1e1e;
+            text-align: center;
+            border-radius: 30px;
+            padding: 10px 20px;
+            transition: all ease-out .3s;
+        }
+            .btn-warning:hover, .btn-warning:focus{
+                background-color: #004569;
+                border: 1px solid #ffb900;
+                color: #fff;
+            }
+        /* blue */
+        .btn-primary{
+            background-color: #004569;
+            border: 1px solid #004569;
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: 10px 20px;
+            transition: all ease-out .3s;
+        }
+            .btn-primary:hover, .btn-primary:focus{
+                background-color: #ffb900;
+                border: 1px solid #ffb900;
+            }
+    @media screen and (min-width:60em) {
+        /* red */
+        .btn-danger{
+            background-color: #d2705c;
+            border: 1px solid #d2705c;
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: 12px 30px;
             transition: all ease-out .3s;
         }
             .btn-danger:hover, .btn-danger:focus{
@@ -116,89 +109,82 @@ body{box-sizing: content-box;}
 
     }
 
-
 /*Typography*/
 .nav-link{
     /* poppins semi-bold */
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight:600;
 }
 .btn-text{
     /* poppins medium */
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight:500;
 }
 .navbar-text-offcanvas{
-    font-size:14px;
+    font-size:1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     color: #004569;
 }
 
-
 .header-Rmedium-60{
-    font-size:3.75rem;
+    font-size:2.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1;
 }
-.header-Rmedium-48{
-    font-size:24px;
+.header-Rmedium-48-nolh{
+    font-size:2.3rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.2;
 }
 .header-Rmedium-38{
-    font-size:28px;
+    font-size:2.1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1.2;
 }
 .header-Rmedium-36{
-    font-size:24px;
+    font-size:1.3rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1.2;
 }
 .header-Rmedium-24{
-    font-size:20px;
+    font-size:1.2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1.2;
 }
-.subtitle-Pmedium-36{
-    font-size:18px; 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
 .subtitle-Pmedium-32{
-    font-size:16px; 
+    font-size:1.5rem; 
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 1;
 }   
 .body-details-Pregular-24{
-    font-size: 20px;
+    font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 .body-details-Pregular-16{
-    font-size: 12px;
+    font-size: .8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 .body-details-Pregular-14{
-    font-size: 12px;
+    font-size: 0.7rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 .body-details-Plight{
-    font-size: 11px;
+    font-size: .8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
 .body-details-12{
-    font-size: 11px;
+    font-size: 0.7rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -208,20 +194,105 @@ body{box-sizing: content-box;}
 .align{
     text-align: center;
 }
-
-    @media screen and (min-width:996px){
+@media screen and (min-width:20em){
+    .nav-link{
+        /* poppins semi-bold */
+        font-size: 0.9rem;
+        font-weight:600;
+    }
+    .btn-text{
+        /* poppins medium */
+        font-size: 0.8rem;
+        font-weight:500;
+    }
+    .navbar-text-offcanvas{
+        font-size:1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        color: #004569;
+    }
+    
+    .header-Rmedium-60{
+        font-size:2.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        line-height: 1;
+    }
+    .header-Rmedium-48-nolh{
+        font-size:2.3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .header-Rmedium-38{
+        font-size:2.1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .header-Rmedium-36{
+        font-size:1.8rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .header-Rmedium-24{
+        font-size:1.4rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .subtitle-Pmedium-32{
+        font-size:1.5rem; 
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        line-height: 1;
+    }   
+    .body-details-Pregular-24{
+        font-size: 1.4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .body-details-Pregular-16{
+        font-size: .8rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .body-details-Pregular-14{
+        font-size: 0.7rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .body-details-Plight{
+        font-size: .8rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+    .body-details-12{
+        font-size: 0.7rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .btn{
+        margin-top: 5px;
+    }
+    .align{
+        text-align: center;
+    }
+}
+    @media screen and (min-width:60em){
         .nav-link{
             /* poppins semi-bold */
-            font-size: 15px;
+            font-size: 0.938rem;
             font-weight:600;
         }
         .btn-text{
             /* poppins medium */
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight:500;
         }
         .navbar-text-offcanvas{
-            font-size:20px;
+            font-size:1.25rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 200;
             color: #004569;
@@ -296,7 +367,6 @@ body{box-sizing: content-box;}
         }
     }
 
-
 /* navbar */
 .navbar{
     padding-inline: 1rem;
@@ -319,7 +389,7 @@ body{box-sizing: content-box;}
     }
     .nav-link:hover::after {opacity: 1;}
 
-    @media screen and (min-width:996px) {  
+    @media screen and (min-width:60em) {  
         .navbar{
             padding-inline: 3rem;
             text-transform: uppercase;
@@ -344,19 +414,31 @@ body{box-sizing: content-box;}
 
 /* carousel */
 #slider-hero-item{
-    min-height: 600px;
+    min-height: 100vh;
     background-color: darkgray;
     position: relative;
     background-size: cover;
     background-origin: padding-box;
     background-attachment: fixed;
-    padding: 0;
 }
 #slider-hero-item .carousel-caption{
-    /* border: 2px solid red; */
-
     position: absolute;
+    align-content: center;
     top: 8rem;
+}
+#slider-hero-item-give{
+    height: 100%;
+    background-color: darkgray;
+    position: relative;
+    background-size: cover;
+    background-origin: padding-box;
+    background-attachment: fixed;
+}
+#slider-hero-item-give .carousel-caption{
+    position: absolute;
+    color: #fff;
+    /* align-content: center; */
+    top: 2.2rem;
 }
     #btncontact{
         background-color: #d2705c;
@@ -364,18 +446,19 @@ body{box-sizing: content-box;}
         color: #fff;
         text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
         text-align: center;
-        padding: 10px 38px;
+        padding: 10px 20px;
         display: inline-block;
-        margin-top:15px;
-        font-size: 14px;
+        margin-top:20px;
+        font-size: .9rem;
         border-radius: 30px;
         transition: all 0.3s;
     }
     #btncontact:hover, #btncontact:focus{
         background-color: #ffb900;
         border: 1px solid #ffb900;
-    }
-    @media screen and (min-width:996px) {
+    }  
+
+    @media screen and (min-width:60em) {
         #slider-hero-item{
             min-height: 700px;
             background-color: darkgray;
@@ -402,6 +485,7 @@ body{box-sizing: content-box;}
             color: #fff;
             align-content: center;
             top: 5rem;
+            min-height: 100vh;
         }
             #btncontact{
                 background-color: #d2705c;
@@ -412,7 +496,7 @@ body{box-sizing: content-box;}
                 padding: 12px 44px;
                 display: inline-block;
                 margin-top:20px;
-                font-size: 18px;
+                font-size: 1.125rem;
                 border-radius: 30px;
                 transition: all 0.3s;
             }
@@ -449,52 +533,74 @@ body{box-sizing: content-box;}
     }
 
     /* bg banner */
-.bgBanner{
-    background-image:url(/assets/homepage.webp);
-    /* linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */
-
-    width: 100%;
-    min-height: 200px ;
-    background-color: rgba(0,0, 0,.2);
-    background-position:top right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-    .bgBanner-holder{
-        /* border: 2px solid red; */
-        padding-inline: 3rem;
-        padding-block: 3rem;
-        color: #fff;
-    }
-    .bgBanner-box{
-        /* border: 2px solid yellow; */
-        width: 100%;
-    }
-
-    .bgBanner-give{
+    .bgBanner{
         background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
-        url(/assets/homepage.webp);
+        /* linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */
+        url(/assets/homepage.webp);            
         width: 100%;
-        min-height: 200px ;
+        min-height: 400px;
         background-color: rgba(0,0, 0,.2);
-        background-position:top right;
+        background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-        .bgBanner-holder-give{
+        .bgBanner-holder{
             /* border: 2px solid red; */
-            padding-inline: 3rem;
-            padding-block: 3rem;
+            padding-inline: 4rem;
+            padding-block: 5rem;
             color: #fff;
         }
-        .bgBanner-box-give{
+        .bgBanner-box{
             /* border: 2px solid yellow; */
-            width: 100%;
-        }
+            width: 400px;
+        }   
 
+        .bgBanner-give{
+            background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+            url(/assets/2.webp);            
+            width: 100%;
+            min-height: 400px;
+            background-color: rgba(0,0, 0,.2);
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+            .bgBanner-holder-give{
+                /* border: 2px solid red; */
+                padding-inline: 4rem;
+                padding-block: 5rem;
+                color: #fff;
+            }
+            .bgBanner-box-give{
+                /* border: 2px solid yellow; */
+                width: 400px;
+            }  
+        
+            .bgBanner-ministry{
+                background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+                url(/assets/blessMinistry.webp);            
+                width: 100%;
+                min-height: 400px;
+                background-color: rgba(0,0, 0,.2);
+                background-position: top center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+                .bgBanner-holder-ministry{
+                    /* border: 2px solid red; */
+                    padding-inline: 2rem;
+                    padding-block: 5rem;
+                    color: #fff;
+                }
+                .bgBanner-box-ministry{
+                    /* border: 2px solid yellow; */
+                    width: 400px;
+                }    
     @media screen and (min-width:996px) {
         .bgBanner{
             background-image: 
@@ -596,7 +702,7 @@ body{box-sizing: content-box;}
             color: #004569;
             padding-bottom: 2px;
         }
-    @media screen and (min-width:996px) {
+    @media screen and (min-width:60em) {
         .tool-section{
             /* border: 2px solid red; */
             height: 700px;
@@ -653,7 +759,7 @@ body{box-sizing: content-box;}
     padding-block: .8rem;
 
 }  
-    @media screen and (min-width:996px) {
+    @media screen and (min-width:60em) {
         .footer-container{
             /* border: 2px solid red; */
             width: 100%;
@@ -682,7 +788,14 @@ body{box-sizing: content-box;}
     }
 
 /* Testimonies */
-@media screen and (min-width:996px) {
+.footer-testimony-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 300px;
+    padding-inline: 2rem;
+    padding-block:3rem;
+}
+@media screen and (min-width:60em) {
     .footer-testimony-container{
         /* border: 2px solid red; */
         width: 100%;
@@ -691,8 +804,91 @@ body{box-sizing: content-box;}
         padding-block:5rem;
     }
 }
+.testimony-section{
+    /* border: 2px solid red; */
+    background:whitesmoke;
+}
+.testimony-holder{
+    /* border: 2px solid salmon; */
+    padding-inline: 2rem;
+    padding-block-start: 2rem;
+    padding-block-end: 10rem;
+}
+.card-box{
+    /* border: 2px solid blue; */
+    width: 320px;
+    height: 400px;
+    box-shadow: 2px 2px 5px #1e1e1e;
+    overflow: hidden;
+    position: relative;
+    transition: all ease-out .3s;
+}
+    .testimony-img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        transition: transform .1s;
+    }
+    .card-intro{
+        width: 100%;
+        height: 90px;
+        color: #fff;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 69, 105,.5);
+    }
+        .testi-name{
+            color: #fff;
+            text-shadow: 1px 1px 2px #1e1e1e;
+            padding-inline: 1rem;
+            padding-block-start: 1rem;
+        }
+        .testi-location{
+            color: #efba27;
+            padding-inline: 2rem;
+            padding-block-end: 1rem;
+        }
+        .testi-details{
+            padding-inline: 1rem;
+            padding-block: 1rem;
+        }
+        .testi-title{
+            /* border: 2px solid red; */
+            color: #d2705c;
+            padding-block-end: 2rem;
+            padding-block-start: 6rem;
+            position: relative;
+        }   
+        .hr{
+            width: 100px;
+            height: 5px;
+            background: #ffb900;
+            /* position: absolute; */
+            margin: 1.5rem auto 0;
+        }
+        .quot{
+            margin: 1rem auto 0;
+        }
+    
+        /* hover effects */
+    .card-box:hover .testimony-img{
+        transform: scale(1.1);
+    }
+    .card-box:hover .card-intro{
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            padding-inline: .8rem;
+            padding-block: 1rem;
+            background: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30,1) 0%, rgb(30, 30, 30,.5) 99.4%);        }
 
-@media screen and (min-width:996px) {
+@media screen and (min-width:60em) {
     .testimony-section{
         /* border: 2px solid red; */
         background:whitesmoke;
@@ -782,3 +978,17 @@ body{box-sizing: content-box;}
             color: #ffb900;
         }
 
+/* give section */
+.carousel-w{
+    padding-inline: 1rem;
+}
+@media screen and (min-width:30em) {
+.carousel-w{
+    padding-inline: 1.5rem;
+}
+}
+@media screen and (min-width:60em) {
+    .carousel-w{
+        padding-inline: 3.59rem;
+    }   
+}
