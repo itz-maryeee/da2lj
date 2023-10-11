@@ -992,3 +992,23 @@ img{
         padding-inline: 3.59rem;
     }   
 }
+
+.giv-container{
+    height: fit-content;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+.give-white{
+    color: #fff;
+}
+@media screen and (min-width:60em) {
+    .giv-container{
+        height: 700px;
+        padding-block: 5rem;
+        padding-inline: 5rem;
+    }
+    .give-white{
+        color: #fff;
+    }
+
+}
