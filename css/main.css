@@ -426,20 +426,7 @@ img{
     align-content: center;
     top: 8rem;
 }
-#slider-hero-item-give{
-    height: 100%;
-    background-color: darkgray;
-    position: relative;
-    background-size: cover;
-    background-origin: padding-box;
-    background-attachment: fixed;
-}
-#slider-hero-item-give .carousel-caption{
-    position: absolute;
-    color: #fff;
-    /* align-content: center; */
-    top: 2.2rem;
-}
+
     #btncontact{
         background-color: #d2705c;
         border: 1px solid #d2705c;
@@ -462,31 +449,17 @@ img{
         #slider-hero-item{
             min-height: 700px;
             background-color: darkgray;
-            position: relative;
             background-size: cover;
             background-origin: padding-box;
             background-attachment: fixed;
+
         }
-        #slider-hero-item .carousel-caption{
-            position: absolute;
-            align-content: center;
-            top: 10rem;
-        }
-        #slider-hero-item-give{
-            min-height: 700px;
-            background-color: darkgray;
-            position: relative;
-            background-size: cover;
-            background-origin: padding-box;
-            background-attachment: fixed;
-        }
-        #slider-hero-item-give .carousel-caption{
-            position: absolute;
-            color: #fff;
-            align-content: center;
-            top: 5rem;
-            min-height: 100vh;
-        }
+        /* #slider-hero-item .carousel-caption{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
             #btncontact{
                 background-color: #d2705c;
                 border: 1px solid #d2705c;
