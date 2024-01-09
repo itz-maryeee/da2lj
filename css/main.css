@@ -1103,7 +1103,7 @@ img{
     }
     .d-flex .cont-para{
         font-size: 14px;
-        padding-left: 5px;
+        padding-left: 10px;
     }
     .col-md-7{
         padding: 16px;
@@ -1111,7 +1111,7 @@ img{
     }
     .col-md-5{
         background:#004569;
-        padding: 5px;
+        padding: 8px;
         color: #fff;
     }
 }
