@@ -1,1 +1,134 @@
-<h1>this is sample contact</h1>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Us</title>
+    <link rel="icon" href="/assets/logo.webp" type="image/x-icon">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header>
+        <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light bg-body-tertiary">
+          <div class="container-fluid">
+            <!-- brand section -->
+            <a class="navbar-brand" href="index.html"><img src="/assets/logo.webp" class="rounded-pill" id="img-logo">
+              <span class="navbar-text-offcanvas d-none d-lg-inline ps-2 fw-bold">DISCIPLING ANOTHER TO LOVE JESUS</span>
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"  aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                  
+                <!-- OffCanvas Code here -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasNavbarLabel" id="navbarContent">       
+                  <div class="offcanvas-header border-bottom border-danger">
+                    <a class="navbar-brand" href="index.html"><span class="navbar-text-offcanvas ps-2 fw-bold" href="index.html">DISCIPLING ANOTHER TO LOVE JESUS</span>
+                    </a>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+    
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto d-flex align-items-lg-center align-items-sm-start">
+                      <li class="nav-item">
+                        <a class="nav-link"  href="testimonies.html">see transformed lives</a>
+                      </li>
+                      <li class="nav-item">
+                       <a class="nav-link" href="give.html">become a Partner</a>      
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ministry.html">bless the ministry</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid img-banner">
+    </div>  
+    
+    <div class="parent-cont">
+      <div class="container cont-container">
+        <div class="row cont-row">
+            <div class="col-md-7">
+              <h4>Talk with us!</h4>
+              <div class="mb-3 bar"></div>
+
+              <form action="https://formsubmit.co/da2ljinternational@gmail.com" method="POST">
+                <div class="mb-3">
+                    <label for="name-input" class="form-label fw-medium">Name</label>
+                    <input name="Name:" type="text" class="form-control" id="name-input" placeholder="Enter your name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email-input" class="form-label fw-medium">Email</label>
+                    <input name="Email:" type="text" class="form-control" id="email-input" placeholder="Enter your email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contact-input" class="form-label fw-medium">Contact Number</label>
+                    <input name="Contact Number:" type="text" class="form-control" id="contact-input" placeholder="Enter your number" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-input" class="form-label fw-medium">Message</label>
+                    <textarea name="Message:" class="form-control" id="message-input" rows="3" placeholder="Send us a message" required></textarea>
+                  </div>
+                  <button class="btn btn-warning btn-tex" type="submit">Send</button>
+              </form>
+            </div>
+
+            <div class="col-md-5 ">
+              <h4 class="fw-bold">Contact us</h4><hr>
+              <div class="mt-4">
+                  <div class="d-flex">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p class="fw-semibold cont-para">Address:</p>
+                    <p class="cont-para">G.P. Sy Bldg., Gorordo Ave., Kamputhaw, Cebu City, Cebu Philippines</p>
+                  </div><hr>
+                  <div class="d-flex">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p class="fw-semibold cont-para">Contact : </p> 
+                    <p class="cont-para">+63 916 442 6191</p>
+                  </div><hr>
+                  <div class="d-flex">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p class="fw-semibold cont-para">Email:</p> 
+                    <p class="cont-para">da2ljinternational</br>@gmail.com</p>
+                  </div><hr>
+
+                  <!-- socialmedia -->
+                  <div class="d-flex">
+                    <i class="bi bi-browser-chrome"></i>
+                    <!-- social media icons -->
+                    <p class="fw-semibold cont-para">Social Media:</p>
+                    <div class="px-2">
+                        <a href="https://www.facebook.com/DA2LJPhilippines" class="text-white text-decoration-none ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                        </a>
+                    </div>
+                    <div class="px-2">
+                        <a href="https://instagram.com/da2ljinternational" class="text-white text-decoration-none">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

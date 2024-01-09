@@ -106,7 +106,6 @@ img{
                 background-color: #ffb900;
                 border: 1px solid #ffb900;
             }
-
     }
 
 /*Typography*/
@@ -126,7 +125,6 @@ img{
     font-weight: 200;
     color: #004569;
 }
-
 .header-Rmedium-60{
     font-size:2.123rem;
     font-family: 'Roboto', sans-serif;
@@ -368,12 +366,12 @@ img{
     }
 
 /* navbar */
-.navbar{
+/* .navbar{
     padding-inline: 1rem;
     text-transform: uppercase;
 }
 .nav-link {
-    /* padding: 0.7em; */
+    /* padding: 0.7em; 
     position: relative;
 }
     .nav-link::after {
@@ -387,20 +385,25 @@ img{
         bottom: 0;
         left: 0;
     }
-    .nav-link:hover::after {opacity: 1;}
+    .nav-link:hover::after {opacity: 1;} */
 
     @media screen and (min-width:60em) {  
         .navbar{
             padding-inline: 3rem;
             text-transform: uppercase;
         } 
+
         .nav-link {
             /* padding: 0.7em; */
+            margin-inline: 10px;
             position: relative;
         }
-            .nav-link::after {
+
+        .nav-link:hover, .nav-link:active{
+            color: #d2705c;
+        }
+            .nav-link::before{
                 content: '';
-                opacity: 0;
                 transition: all 0.1s;
                 height: 2px;
                 width: 100%;
@@ -408,8 +411,15 @@ img{
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                visibility: hidden;
             }
-            .nav-link:hover::after {opacity: 1;}
+            .nav-link:hover::before, .nav-link.active::before{
+                width: 100%;
+                visibility: visible;
+            }
+            .nav-link.active{
+                color: #d2705c !important;
+            }
     }
 
 /* carousel */
@@ -804,101 +814,29 @@ img{
         padding-block:5rem;
     }
 }
+
 .testimony-section{
     /* border: 2px solid red; */
     background:whitesmoke;
 }
+.wrapper{
+    padding-inline: auto;
+}
 .testimony-holder{
     /* border: 2px solid salmon; */
-    padding-inline: 2rem;
-    padding-block-start: 2rem;
-    padding-block-end: 10rem;
-}
-.card-box{
-    /* border: 2px solid blue; */
-    width: 320px;
-    height: 400px;
-    box-shadow: 2px 2px 5px #1e1e1e;
-    overflow: hidden;
-    position: relative;
-    transition: all ease-out .3s;
-}
-    .testimony-img{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover;
-        object-position: center;
-        transition: transform .1s;
-    }
-    .card-intro{
-        width: 100%;
-        height: 8   0px;
-        color: #fff;
-        box-sizing: border-box;
-        position: absolute;
-        bottom: 0;
-        background: rgb(0, 69, 105,.5);
-    }
-        .testi-name{
-            color: #fff;
-            text-shadow: 1px 1px 2px #1e1e1e;
-            padding-inline: 1rem;
-            padding-block-start: 1rem;
-        }
-        .testi-location{
-            color: #efba27;
-            padding-inline: 2rem;
-            padding-block-end: 1rem;
-        }
-        .testi-details{
-            padding-inline: 1rem;
-            padding-block: 1rem;
-        }
-        .testi-title{
-            /* border: 2px solid red; */
-            color: #d2705c;
-            padding-block-end: 2rem;
-            padding-block-start: 6rem;
-            position: relative;
-        }   
-        .hr{
-            width: 100px;
-            height: 5px;
-            background: #ffb900;
-            /* position: absolute; */
-            margin: 1.5rem auto 0;
-        }
-        /* hover effects */
-    .card-box:hover .testimony-img{
-        transform: scale(1.1);
-    }
-    .card-box:hover .card-intro{
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            box-sizing: border-box;
-            position: absolute;
-            bottom: 0;
-            padding-inline: .8rem;
-            padding-block: 1rem;
-            background: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30,1) 0%, rgb(30, 30, 30,.5) 99.4%);        }
 
-@media screen and (min-width:60em) {
-    .testimony-section{
-        /* border: 2px solid red; */
-        background:whitesmoke;
-    }
-    .testimony-holder{
-        /* border: 2px solid salmon; */
-
-        padding-inline: 4rem;
-        padding-block-start: 2rem;
-        padding-block-end: 5rem;
-    }
+    max-height: 500px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-block: 2rem;
+}
+.testimony-holder::-webkit-scrollbar{
+    width: 0;
+}
     .card-box{
         /* border: 2px solid blue; */
-        width: 320px;
+        min-width: 320px;
         height: 400px;
         box-shadow: 2px 2px 5px #1e1e1e;
         overflow: hidden;
@@ -915,7 +853,7 @@ img{
         }
         .card-intro{
             width: 100%;
-            height: 100px;
+            height: 8   0px;
             color: #fff;
             box-sizing: border-box;
             position: absolute;
@@ -953,23 +891,107 @@ img{
             }
         
             /* hover effects */
-        .card-box:hover .testimony-img{
-            transform: scale(1.1);
-        }
-        .card-box:hover .card-intro{
-                width: 100%;
-                height: 100%;
-                color: #fff;
-                box-sizing: border-box;
-                position: absolute;
-                bottom: 0;
-                padding-inline: .8rem;
-                padding-block: 1rem;
-                background: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30,1) 0%, rgb(30, 30, 30,.5) 99.4%);        }
-        }
-        .card-box:hover .testi-location{
-            color: #ffb900;
-        }
+            .card-box:hover .testimony-img{
+                transform: scale(1.1);
+            }
+            .card-box:hover .card-intro{
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    box-sizing: border-box;
+                    position: absolute;
+                    bottom: 0;
+                    padding-inline: .8rem;
+                    padding-block: 1rem;
+                    background: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30,1) 0%, rgb(30, 30, 30,.5) 99.4%);        }
+
+            @media screen and (min-width:60em) {
+            .testimony-section{
+                /* border: 2px solid red; */
+                background:whitesmoke;
+            }
+            .testimony-holder{
+                /* border: 2px solid salmon; */
+
+                padding-inline: 4rem;
+                padding-block-start: 2rem;
+                padding-block-end: 5rem;
+            }
+            .card-box{
+                /* border: 2px solid blue; */
+                width: 320px;
+                height: 400px;
+                box-shadow: 2px 2px 5px #1e1e1e;
+                overflow: hidden;
+                position: relative;
+                transition: all ease-out .3s;
+            }
+                .testimony-img{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    object-fit: cover;
+                    object-position: center;
+                    transition: transform .1s;
+                }
+                .card-intro{
+                    width: 100%;
+                    height: 100px;
+                    color: #fff;
+                    box-sizing: border-box;
+                    position: absolute;
+                    bottom: 0;
+                    background: rgb(0, 69, 105,.5);
+                }
+                    .testi-name{
+                        color: #fff;
+                        text-shadow: 1px 1px 2px #1e1e1e;
+                        padding-inline: 1rem;
+                        padding-block-start: 1rem;
+                    }
+                    .testi-location{
+                        color: #efba27;
+                        padding-inline: 2rem;
+                        padding-block-end: 1rem;
+                    }
+                    .testi-details{
+                        padding-inline: 1rem;
+                        padding-block: 1rem;
+                    }
+                    .testi-title{
+                        /* border: 2px solid red; */
+                        color: #d2705c;
+                        padding-block-end: 2rem;
+                        padding-block-start: 6rem;
+                        position: relative;
+                    }   
+                    .hr{
+                        width: 100px;
+                        height: 5px;
+                        background: #ffb900;
+                        /* position: absolute; */
+                        margin: 1.5rem auto 0;
+                    }
+                
+                    /* hover effects */
+                .card-box:hover .testimony-img{
+                    transform: scale(1.1);
+                }
+                .card-box:hover .card-intro{
+                        width: 100%;
+                        height: 100%;
+                        color: #fff;
+                        box-sizing: border-box;
+                        position: absolute;
+                        bottom: 0;
+                        padding-inline: .8rem;
+                        padding-block: 1rem;
+                        background: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30,1) 0%, rgb(30, 30, 30,.5) 99.4%);        }
+                }
+                .card-box:hover .testi-location{
+                    color: #ffb900;
+                }
+
 /* give section */
 .carousel-w{
     padding-inline: 1rem;
@@ -1005,3 +1027,79 @@ img{
     }
 
 }
+
+/* Contact Us Section */
+.parent-cont{
+    margin: 0;
+    position: relative;
+}
+.cont-container{
+    /* border: 2px solid #d2705c; */
+    width: 60%;
+    padding: 45px;
+    border-radius: 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-45%,8%);
+}
+.cont-row{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   
+}
+.col-md-7{
+    padding: 20px;
+}
+.col-md-5{
+    background:#004569;
+    padding: 20px;
+    color: #fff;
+}
+.form-control {
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.bi{
+    font-size: 20px;
+}
+.d-flex .cont-para{
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .parent-cont{
+        position: relative;
+    }
+    .cont-container{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-45%,1%);
+
+    }
+}
+
+    /* bar in contactUs.html design*/
+    .bar{
+        width: 8rem;
+        height: .2rem;
+        background-color: #d2705c;
+    }
+    /* banner in contactUs.html design */
+    .img-banner{
+        position: relative;
+        height: 400px;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+            url(/assets/1.webp);
+        background-position: center;
+        background-size: cover;  
+    }
